@@ -11,6 +11,9 @@ a {
 img,
 video {
   display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .row + .row {
@@ -21,6 +24,6 @@ video {
 .row > [class^="col-"] {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
+  background-color: rgba(31, 195, 159, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
 }
