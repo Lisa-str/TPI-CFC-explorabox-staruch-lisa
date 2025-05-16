@@ -588,7 +588,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _swiper = require("swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 var _modules = require("swiper/modules");
-var _mainScss = require("../scss/main.scss");
 const swiper = new (0, _swiperDefault.default)(".mySwiper", {
     modules: [
         (0, _modules.Navigation)
@@ -596,8 +595,8 @@ const swiper = new (0, _swiperDefault.default)(".mySwiper", {
     slidesPerView: 1.2,
     spaceBetween: 16,
     navigation: {
-        nextEl: ".swiper-controls .swiper-button-next",
-        prevEl: ".swiper-controls .swiper-button-prev"
+        nextEl: ".custom-controls .swiper-button-next",
+        prevEl: ".custom-controls .swiper-button-prev"
     },
     breakpoints: {
         768: {
@@ -609,7 +608,7 @@ const swiper = new (0, _swiperDefault.default)(".mySwiper", {
     }
 });
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","swiper":"iM6UL","../scss/main.scss":"4Pg3x","swiper/modules":"9ktz6"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","swiper":"iM6UL","swiper/modules":"9ktz6"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -4139,7 +4138,7 @@ function getRotateFix(swiper) {
     };
 }
 
-},{"./ssr-window.esm.mjs":"th8PY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Pg3x":[function() {},{}],"9ktz6":[function(require,module,exports) {
+},{"./ssr-window.esm.mjs":"th8PY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9ktz6":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Virtual", ()=>(0, _virtualMjsDefault.default));
