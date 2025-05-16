@@ -1,0 +1,22 @@
+$color-red: #d63e3e;
+$color-green: #2ee255;
+
+$color-primary: #374c46;
+$color-primary-hover: #050707;
+$color-secondary: #fbe1d0;
+$color-secondary-hover: #e69b6e;
+$color-dark: #192322;
+$color-light: #fffdfb;
+$color-accent: #ee6d17;
+$color-accent-hover: #af4506;
+
+$color-link-hover: lighten($color-accent, 10%);
+$color-text: $color-dark;
+
+//== Typography
+// $font-base: "Satoshi-Medium", Arial, sans-serif;
+$text-base-size: 18px;
+$text-base-line-height: 1.5em;
+$title-base-line-height: 1.4em;
+$fontawesome: "Font Awesome 6 Pro";
+$fontawesome-brand: "Font Awesome 6 Brands";

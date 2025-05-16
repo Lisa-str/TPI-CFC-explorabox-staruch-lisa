@@ -13529,10 +13529,9 @@ img, video {
 
 html {
   scroll-behavior: smooth;
+  color: #fffdfb;
+  background-color: #192322;
   font-size: 20px;
-  font-family: var(--text);
-  background-color: var(--dark);
-  color: var(--white);
   transition: all .3s ease-in-out;
 }
 
@@ -13540,19 +13539,12 @@ main {
   position: relative;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .carousel {
   display: flex;
-}
-
-.row + .row {
-  margin-top: 16px;
-}
-
-.row > .col, .row > [class^="col-"] {
-  background-color: #1fc39f26;
-  border: 1px solid #600cdd;
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 .swiper {
@@ -13564,7 +13556,7 @@ main {
   all: unset;
   color: #fff;
   cursor: pointer;
-  background-color: orange;
+  background-color: #ee6d17;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
@@ -13576,5 +13568,42 @@ main {
 .custom-controls .swiper-button-prev:after, .custom-controls .swiper-button-next:after {
   font-size: inherit;
   color: #fff;
+}
+
+.button {
+  color: #fffdfb;
+  cursor: pointer;
+  background-color: #ee6d17;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: .625rem;
+  width: fit-content;
+  padding: .875rem 1.5rem;
+  line-height: 1;
+  transition: all .3s ease-in-out;
+  display: flex;
+}
+
+.button:hover {
+  background-color: #af4506;
+}
+
+.button:hover i {
+  color: #192322;
+}
+
+.button-second {
+  color: #192322;
+  background-color: #fbe1d0;
+}
+
+.button-second:hover {
+  color: #192322;
+  background-color: #e69b6e;
+}
+
+.l-button {
+  gap: .62rem;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */
