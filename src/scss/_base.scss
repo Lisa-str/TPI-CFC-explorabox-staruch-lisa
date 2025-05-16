@@ -10,12 +10,33 @@ a {
 
 img,
 video {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
+  vertical-align: middle;
+  user-select: none;
   border-radius: 10px;
 }
 
+/* base ↓ */
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+  font-family: var(--text);
+  background-color: var(--dark);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+main {
+  position: relative;
+}
+
+/* carousel ↓ */
+.carousel {
+  display: flex;
+}
+
+/* bootstrap ↓ */
 .row + .row {
   margin-top: 16px;
 }
@@ -25,5 +46,33 @@ video {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: rgba(31, 195, 159, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+  border: 1px solid rgb(96, 12, 221);
+}
+
+/* swiper ↓ */
+.swiper {
+  position: relative;
+  padding-top: 5rem;
+}
+
+.custom-controls {
+  .swiper-button-prev,
+  .swiper-button-next {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: orange;
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    cursor: pointer;
+
+    &::after {
+      font-size: inherit;
+      color: #fff;
+    }
+  }
 }

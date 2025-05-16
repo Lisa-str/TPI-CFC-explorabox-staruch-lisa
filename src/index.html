@@ -5,6 +5,11 @@
     <title>Explorabox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     hello world
@@ -14,7 +19,9 @@
           <div class="container">
             <div class="row">
               <div class="col-6 bento-img">
-                <div class="col-12">grande img</div>
+                <div class="col-12">
+                  <img src="img/image.png" alt="" />
+                </div>
               </div>
 
               <div class="col-6 bento-text">
@@ -22,7 +29,9 @@
                   <div class="col-12">titre</div>
                   <div class="col-4">element graphique</div>
                   <div class="col-8">text</div>
-                  <div class="col-12">img</div>
+                  <div class="col-12">
+                    <img class="scale" src="img/sensation-forte.png" alt="" />
+                  </div>
                   <div class="col-6">btn</div>
                   <div class="col-6">btn</div>
                 </div>
@@ -31,14 +40,50 @@
           </div>
         </div>
       </div>
-      <div class="carousel carousel-card">
-        <include src="include-card.html"></include>
-        <include src="include-card.html"></include>
-        <include src="include-card.html"></include>
-        <include src="include-card.html"></include>
-        <include src="include-card.html"></include>
+
+      <div class="getaway">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 position-relative align-items-center">
+              <div class="row">
+                <div class="col-10"><h2>titre</h2></div>
+                <div
+                  class="col-2 d-flex align-items-center justify-content-end"
+                >
+                  <div class="custom-controls d-flex gap-2">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <include src="include-card.html"></include>
+                  </div>
+                  <div class="swiper-slide">
+                    <include src="include-card.html"></include>
+                  </div>
+                  <div class="swiper-slide">
+                    <include src="include-card.html"></include>
+                  </div>
+                  <div class="swiper-slide">
+                    <include src="include-card.html"></include>
+                  </div>
+                  <div class="swiper-slide">
+                    <include src="include-card.html"></include>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script src="js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
+s
