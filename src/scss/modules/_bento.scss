@@ -1,59 +1,61 @@
 /* bento ↓ */
 
 .bento {
-  height: 80dvh;
-  display: flex;
+  height: 55dvh;
   gap: 1rem;
 
-  img {
-    height: 100%;
-  }
-
-  .stretch-img {
-    flex-grow: 1;
-
-    .col-12 {
-      padding: 0;
+  .big-img-bento {
+    flex: 1 0 0;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
 
   .side-bento {
+    flex: 1 0 0;
     gap: 1rem;
-    height: 100%;
   }
 
   .bento-two {
     gap: 1rem;
+    flex-wrap: nowrap;
+
+    .text-wrapper {
+      flex: 1;
+      white-space: normal;
+      word-break: break-word;
+    }
   }
 
-  .big-img-bento {
-    height: 100%;
-  }
-
-  .big-img-bento,
-  .bento-cta-button {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+  .stretch-img {
+    flex-grow: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .bento-cta {
     gap: 1rem;
-  }
-
-  .bento-title-homepage {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    .bento-cta-button {
+      flex: 1 1 auto;
+      padding: 0 !important;
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
+/* responsive */
+@media (max-width: 768px) {
   .bento {
+    flex-direction: column;
     height: auto;
-
     .big-img-bento {
-      height: 20%;
-
+      height: 20vh;
       img {
-        height: 20%;
+        height: 100%;
       }
     }
   }
