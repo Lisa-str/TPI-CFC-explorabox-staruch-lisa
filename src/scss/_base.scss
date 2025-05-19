@@ -30,65 +30,6 @@ html {
   transition: all 0.3s ease-in-out;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: $font-semibold;
-}
-
-h1 {
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem) !important;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120.2%;
-}
-
-h2 {
-  font-size: clamp(1rem, 2.5vw, 1.6rem) !important;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 2.8125rem;
-  padding: 1.5rem 0;
-  text-align: center;
-}
-
-h3 {
-  font-size: clamp(0.9rem, 2.5vw, 1rem) !important;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.8125rem;
-}
-
-h4 {
-  font-size: clamp(0.6rem, 2.5vw, 1.2rem) !important;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 3rem; /* 111.628% */
-}
-
-p,
-a {
-  margin-bottom: 0 !important;
-  font-family: $font-regular;
-  font-size: clamp(0.8rem, 2.5vw, 1rem) !important;
-  line-height: 1.4375rem;
-}
-
-.accordion-header h3 {
-  font-size: clamp(1.3rem, 2.5vw, 1.3rem);
-  font-weight: 500;
-  line-height: 3rem; /* 111.628% */
-}
-
-.sub-title,
-nav a,
-.button a,
-.button-second a,
-.accordion-header h3 {
-  font-family: $font-medium;
-}
-
 /* bootstrap ↓ */
 // .row + .row {
 //   margin-top: 16px;
@@ -125,4 +66,15 @@ img {
   .box-container {
     gap: 0.5rem;
   }
+}
+
+.cta-download {
+  color: $color-accent;
+  font-size: clamp(1.5rem, 2.5vw, 1.5rem);
+}
+
+.cta-badges {
+  display: flex;
+  gap: 0.3rem;
+  padding: 0.5rem 0;
 }

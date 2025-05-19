@@ -13527,6 +13527,50 @@ textarea.form-control-lg {
   font-style: normal;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: Poppins-SemiBold, Arial, sans-serif;
+}
+
+h1, .h1 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.2%;
+  font-size: clamp(2rem, 2.5vw, 2.2rem) !important;
+}
+
+h2, .h2 {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8125rem;
+  font-size: clamp(1.8rem, 2.5vw, 2rem) !important;
+}
+
+h3, .h3 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8125rem;
+  font-size: clamp(1.3rem, 2.5vw, 1.5rem) !important;
+}
+
+p, a {
+  font-family: Poppins-Regular, Arial, sans-serif;
+  line-height: 1.4375rem;
+  margin-bottom: 0 !important;
+  font-size: clamp(.8rem, 2.5vw, 1rem) !important;
+}
+
+.accordion-header h3, .accordion-header .h3 {
+  font-size: clamp(1.5rem, 2.5vw, 1.5rem);
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.sub-title, nav a, .button a, .button-second a, .accordion-header h3, .accordion-header .h3 {
+  font-family: Poppins-Medium, Arial, sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13554,57 +13598,6 @@ html {
   transition: all .3s ease-in-out;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  font-family: Poppins-SemiBold, Arial, sans-serif;
-}
-
-h1, .h1 {
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120.2%;
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem) !important;
-}
-
-h2, .h2 {
-  text-align: center;
-  padding: 1.5rem 0;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 2.8125rem;
-  font-size: clamp(1rem, 2.5vw, 1.6rem) !important;
-}
-
-h3, .h3 {
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.8125rem;
-  font-size: clamp(.9rem, 2.5vw, 1rem) !important;
-}
-
-h4, .h4 {
-  font-style: normal;
-  font-weight: 500;
-  line-height: 3rem;
-  font-size: clamp(.6rem, 2.5vw, 1.2rem) !important;
-}
-
-p, a {
-  font-family: Poppins-Regular, Arial, sans-serif;
-  line-height: 1.4375rem;
-  margin-bottom: 0 !important;
-  font-size: clamp(.8rem, 2.5vw, 1rem) !important;
-}
-
-.accordion-header h3, .accordion-header .h3 {
-  font-size: clamp(1.3rem, 2.5vw, 1.3rem);
-  font-weight: 500;
-  line-height: 3rem;
-}
-
-.sub-title, nav a, .button a, .button-second a, .accordion-header h3, .accordion-header .h3 {
-  font-family: Poppins-Medium, Arial, sans-serif;
-}
-
 main {
   flex-direction: column;
   gap: 4.6rem;
@@ -13628,6 +13621,17 @@ img {
   .box-container {
     gap: .5rem;
   }
+}
+
+.cta-download {
+  color: #ee6d17;
+  font-size: clamp(1.5rem, 2.5vw, 1.5rem);
+}
+
+.cta-badges {
+  gap: .3rem;
+  padding: .5rem 0;
+  display: flex;
 }
 
 .swiper {
