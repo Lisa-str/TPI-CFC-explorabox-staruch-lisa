@@ -13566,6 +13566,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
+  padding: 1.5rem 0;
   font-size: clamp(1rem, 2.5vw, 1.6rem);
   font-style: normal;
   font-weight: 500;
@@ -13586,7 +13587,7 @@ h4, .h4 {
   line-height: 3rem;
 }
 
-p {
+p, a {
   margin-bottom: 0;
   font-family: Poppins-Regular, Arial, sans-serif;
   font-size: clamp(.8rem, 2.5vw, 1rem);
@@ -13603,8 +13604,10 @@ p {
   font-family: Poppins-Medium, Arial, sans-serif;
 }
 
-h2, .h2 {
-  padding: 3rem 0;
+main {
+  flex-direction: column;
+  gap: 4.6rem;
+  display: flex;
 }
 
 svg {
@@ -13623,6 +13626,17 @@ img {
   .box-container {
     gap: .5rem;
   }
+}
+
+.patners {
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem 0;
+  display: flex;
+}
+
+.patners img {
+  border-radius: 0;
 }
 
 .swiper {
@@ -13692,6 +13706,15 @@ img {
   gap: .62rem;
 }
 
+.button-big {
+  width: 100%;
+  padding: 2.31rem 2rem;
+}
+
+.button-big a, .button-big .fa-solid {
+  font-size: clamp(1.3rem, 2.5vw, 1.3rem);
+}
+
 .box {
   color: #fffdfb;
   background-color: #374c46;
@@ -13756,13 +13779,9 @@ img {
 }
 
 .bento {
+  gap: 1rem;
   height: 80dvh;
   display: flex;
-}
-
-.bento .big-img-bento {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 
 .bento img {
@@ -13777,8 +13796,30 @@ img {
   padding: 0;
 }
 
-.bento .side-bento, .bento .bento-two {
+.bento .side-bento {
   gap: 1rem;
+  height: 100%;
+}
+
+.bento .bento-two {
+  gap: 1rem;
+}
+
+.bento .big-img-bento {
+  height: 100%;
+}
+
+.bento .big-img-bento, .bento .bento-cta-button {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.bento .bento-cta {
+  gap: 1rem;
+}
+
+.bento .bento-title-homepage {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 @media screen and (width <= 768px) {

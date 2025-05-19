@@ -37,3 +37,13 @@
 .l-button {
   gap: 0.62rem;
 }
+
+.button-big {
+  padding: 2.31rem 2rem;
+  width: 100%;
+
+  a,
+  .fa-solid {
+    font-size: clamp(1.3rem, 2.5vw, 1.3rem);
+  }
+}

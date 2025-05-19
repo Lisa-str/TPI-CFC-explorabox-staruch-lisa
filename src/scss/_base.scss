@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+// .row > * {
+//   padding: 0;
+// }
+
 a {
   color: inherit;
   text-decoration: none;
@@ -45,6 +49,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
   line-height: 2.8125rem;
+  padding: 1.5rem 0;
 }
 
 h3 {
@@ -61,7 +66,8 @@ h4 {
   line-height: 3rem; /* 111.628% */
 }
 
-p {
+p,
+a {
   margin-bottom: 0;
   font-family: $font-regular;
   font-size: clamp(0.8rem, 2.5vw, 1rem);
@@ -95,8 +101,10 @@ nav a,
 //   border: 1px solid rgb(96, 12, 221);
 // }
 
-h2 {
-  padding: 3rem 0;
+main {
+  gap: 4.6rem;
+  display: flex;
+  flex-direction: column;
 }
 
 svg {
@@ -114,5 +122,16 @@ img {
 
   .box-container {
     gap: 0.5rem;
+  }
+}
+
+.patners {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem 0;
+
+  img {
+    border-radius: 0;
   }
 }

@@ -15,14 +15,14 @@
     <main>
       <div class="container hero">
         <div class="row bento">
-          <div class="col-md-6 col-sm-12 big-img-bento">
-            <img src="img/image.png" alt="" />
+          <div class="col-md col-sm-12 big-img-bento">
+            <img src="img/hero-bento-swiss.png" alt="" />
           </div>
 
           <div class="col-md-6 col-sm-12 d-flex flex-column side-bento">
             <div class="row">
               <div class="col-12 box">
-                <h1>
+                <h1 class="bento-title-homepage">
                   10 expériences surprises par an. 100 % suisses, 0 % à
                   planifier.
                 </h1>
@@ -54,13 +54,22 @@
 
             <div class="row stretch-img">
               <div class="col-12">
-                <img src="img/sensation-forte.png" alt="" />
+                <img src="img/hero-bento-suprise.png" alt="" />
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-md-6">button</div>
-              <div class="col-md-6">button</div>
+            <div class="row bento-cta">
+              <div class="col-md-6 bento-cta-button">
+                <include src="include-button-second-big.html"
+                  >{ "buttonsecondbigtext": "Offrir !", "buttonsecondbigicon":
+                  "fa-gift" }</include
+                >
+              </div>
+              <div class="col bento-cta-button">
+                <include src="include-button-big.html"
+                  >{ "buttonbigtext": "Réserver !" }</include
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -120,41 +129,6 @@
                   <include src="include-card.html"></include>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container about">
-        <div class="row">
-          <div class="col-12">
-            <h2>A propos d’ExploraBox</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <img
-              src="img/a-propos.png"
-              alt="les trois créateurs d'explorabox faisait un selfie heureux"
-            />
-          </div>
-          <div
-            class="col-sm-12 col-md-6 d-flex flex-column justify-content-center about-content"
-          >
-            <div class="row">
-              <h3>Une aventure pensée avec passion</h3>
-              <p>
-                Derrière chaque escapade, il y a une équipe curieuse et engagée,
-                ainsi que des partenaires locaux sélectionnés avec soin.
-                Ensemble, nous concevons des expériences qui éveillent, étonnent
-                et valorisent les richesses de la Suisse — tout en privilégiant
-                la mobilité douce et des pratiques durables à chaque
-              </p>
-            </div>
-            <div class="row">
-              <include src="include-button.html"
-                >{ "buttontext": "En apprendre plus" }</include
-              >
             </div>
           </div>
         </div>
@@ -255,6 +229,50 @@
           </div>
         </div>
       </div>
+
+      <div class="container about">
+        <div class="row">
+          <div class="col-12">
+            <h2>A propos d’ExploraBox</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img
+              src="img/a-propos.png"
+              alt="les trois créateurs d'explorabox faisait un selfie heureux"
+            />
+          </div>
+          <div
+            class="col-sm-12 col-md-6 d-flex flex-column justify-content-center about-content"
+          >
+            <div class="row">
+              <div class="col-12">
+                <h3>Une aventure pensée avec passion</h3>
+              </div>
+              <div class="col-12">
+                <p>
+                  Derrière chaque escapade, il y a une équipe curieuse et
+                  engagée, ainsi que des partenaires locaux sélectionnés avec
+                  soin. Ensemble, nous concevons des expériences qui éveillent,
+                  étonnent et valorisent les richesses de la Suisse — tout en
+                  privilégiant la mobilité douce et des pratiques durables à
+                  chaque
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <include src="include-button.html"
+                  >{ "buttontext": "En apprendre plus" }</include
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <include src="include-partners.html"></include>
     </main>
     <script src="js/main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
