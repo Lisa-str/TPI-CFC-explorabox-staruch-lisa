@@ -54,40 +54,76 @@
         </div>
       </div>
 
-      <div class="getaway">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 position-relative align-items-center">
-              <div class="row">
-                <div class="col-10"><h2>Nos escapades</h2></div>
-                <div
-                  class="col-2 d-flex align-items-center justify-content-end"
-                >
-                  <div class="custom-controls d-flex gap-2">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                  </div>
+      <div class="container getaway">
+        <div class="row">
+          <div class="col-12 position-relative align-items-center">
+            <div class="row">
+              <div class="col-10"><h2>Nos escapades</h2></div>
+              <div class="col-2 d-flex align-items-center justify-content-end">
+                <div class="custom-controls d-flex gap-2">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
                 </div>
               </div>
             </div>
-            <div class="col-12">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <include src="include-card.html"> </include>
-                  </div>
-                  <div class="swiper-slide">
-                    <include src="include-card.html"></include>
-                  </div>
-                  <div class="swiper-slide">
-                    <include src="include-card.html"></include>
-                  </div>
-                  <div class="swiper-slide">
-                    <include src="include-card.html"></include>
-                  </div>
-                  <div class="swiper-slide">
-                    <include src="include-card.html"></include>
-                  </div>
+          </div>
+          <div class="col-12">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <include src="include-card.html"> </include>
+                </div>
+                <div class="swiper-slide">
+                  <include src="include-card.html"></include>
+                </div>
+                <div class="swiper-slide">
+                  <include src="include-card.html"></include>
+                </div>
+                <div class="swiper-slide">
+                  <include src="include-card.html"></include>
+                </div>
+                <div class="swiper-slide">
+                  <include src="include-card.html"></include>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container concept">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="row">
+              <h2>Le concept</h2>
+            </div>
+            <div class="row container-concept">
+              <div class="row box-container justify-content-center">
+                <div class="col-3">
+                  <include src="include-box-icon.html"
+                    >{ "boxicontext": "Une surprise bien préparée",
+                    "boxiconicon": "fa-gift" }</include
+                  >
+                </div>
+                <div class="col-3">
+                  <include src="include-box-icon.html"
+                    >{ "boxicontext": "Une surprise bien préparée",
+                    "boxiconicon": "fa-magnifying-glass" }</include
+                  >
+                </div>
+                <div class="col-3">
+                  <include src="include-box-icon.html"
+                    >{ "boxicontext": "Une surprise bien préparée",
+                    "boxiconicon": "fa-magnifying-glass" }</include
+                  >
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-9">
+                  <include src="include-box-cta.html"
+                    >{ "boxctatext": "Découvrez comment cela fonctionne",
+                    "boxctaicon": "fa-arrow-right" }</include
+                  >
                 </div>
               </div>
             </div>
@@ -97,5 +133,9 @@
     </main>
     <script src="js/main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6013118502.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,39 @@
+/* button ↓ */
+
+.button {
+  background-color: $color-accent;
+  color: $color-light;
+  line-height: 1;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+
+  display: flex;
+  padding: 0.875rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  &:hover {
+    background-color: $color-accent-hover;
+
+    i {
+      color: $color-dark;
+    }
+  }
+}
+
+.button-second {
+  background-color: $color-secondary;
+  color: $color-dark;
+
+  &:hover {
+    background-color: $color-secondary-hover;
+    color: $color-dark;
+  }
+}
+
+.l-button {
+  gap: 0.62rem;
+}

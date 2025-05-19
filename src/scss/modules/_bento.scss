@@ -1,0 +1,14 @@
+/* bento ↓ */
+
+.bento {
+  height: 100dvh;
+  display: flex;
+
+  img {
+    height: 100%;
+  }
+
+  .stretch-img {
+    flex-grow: 1;
+  }
+}

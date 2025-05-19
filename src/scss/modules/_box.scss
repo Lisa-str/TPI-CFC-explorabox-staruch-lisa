@@ -1,0 +1,49 @@
+/* box ↓ */
+
+.box-container {
+  .row > * {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .box-icon {
+    display: flex;
+    padding: 1.875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4375rem;
+    flex: 1 0 0;
+    background-color: $color-primary;
+    color: $color-light;
+    border-radius: 0.625rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.box-cta {
+  display: flex;
+  padding: 0.875rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.625rem;
+  background-color: $color-accent;
+  color: $color-light;
+  cursor: pointer;
+}
+
+.box-cta:hover {
+  background-color: $color-accent-hover;
+  transition: all 0.3s ease-in-out;
+}
+
+.container-concept {
+  gap: 1.5rem;
+}
+
+.concept {
+  h2 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,32 @@
+/* swiper ↓ */
+.swiper {
+  position: relative;
+  padding-top: 5rem;
+}
+
+.custom-controls {
+  .swiper-button-prev,
+  .swiper-button-next {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $color-accent;
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    cursor: pointer;
+
+    &::after {
+      font-size: inherit;
+      color: #fff;
+    }
+  }
+}
+
+/* carousel ↓ */
+.carousel {
+  display: flex;
+}

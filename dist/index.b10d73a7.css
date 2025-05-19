@@ -333,11 +333,6 @@ sup {
   top: -.5em;
 }
 
-a {
-  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
-  text-decoration: underline;
-}
-
 a:hover {
   --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
 }
@@ -13516,6 +13511,7 @@ textarea.form-control-lg {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img, video {
@@ -13534,8 +13530,12 @@ html {
   transition: all .3s ease-in-out;
 }
 
-.carousel {
-  display: flex;
+p {
+  margin-bottom: 0;
+}
+
+h2, .h2 {
+  padding: 3rem 0;
 }
 
 .swiper {
@@ -13559,6 +13559,10 @@ html {
 .custom-controls .swiper-button-prev:after, .custom-controls .swiper-button-next:after {
   font-size: inherit;
   color: #fff;
+}
+
+.carousel {
+  display: flex;
 }
 
 .button {
@@ -13596,6 +13600,49 @@ html {
 
 .l-button {
   gap: .62rem;
+}
+
+.box-container .row > * {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.box-container .box-icon {
+  color: #fffdfb;
+  text-align: center;
+  background-color: #374c46;
+  border-radius: .625rem;
+  flex-direction: column;
+  flex: 1 0 0;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4375rem;
+  padding: 1.875rem;
+  display: flex;
+}
+
+.box-cta {
+  color: #fffdfb;
+  cursor: pointer;
+  background-color: #ee6d17;
+  border-radius: .625rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: .875rem 2rem;
+  display: flex;
+}
+
+.box-cta:hover {
+  background-color: #af4506;
+  transition: all .3s ease-in-out;
+}
+
+.container-concept {
+  gap: 1.5rem;
+}
+
+.concept h2, .concept .h2 {
+  text-align: center;
 }
 
 .bento {
