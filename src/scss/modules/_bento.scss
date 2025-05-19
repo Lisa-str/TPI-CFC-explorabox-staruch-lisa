@@ -4,6 +4,10 @@
   height: 55dvh;
   gap: 1rem;
 
+  h1 {
+    font-size: clamp(1.4rem, 2.5vw, 1.6rem) !important;
+  }
+
   .big-img-bento {
     flex: 1 0 0;
     img {

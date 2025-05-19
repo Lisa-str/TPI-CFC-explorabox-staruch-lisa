@@ -13628,8 +13628,8 @@ img {
   font-size: clamp(1.5rem, 2.5vw, 1.5rem);
 }
 
-.cta-badges {
-  gap: .3rem;
+.buttons-next-to-each-other {
+  gap: .5rem;
   padding: .5rem 0;
   display: flex;
 }
@@ -13775,6 +13775,10 @@ img {
   height: 55dvh;
 }
 
+.bento h1, .bento .h1 {
+  font-size: clamp(1.4rem, 2.5vw, 1.6rem) !important;
+}
+
 .bento .big-img-bento {
   flex: 1 0 0;
 }
@@ -13892,6 +13896,7 @@ img {
 .accordion {
   flex-direction: column;
   gap: 1rem;
+  padding-bottom: 1rem;
   display: flex;
 }
 
@@ -13933,5 +13938,50 @@ img {
 
 .faq .button {
   margin-top: 3rem;
+}
+
+.lastcta {
+  position: relative;
+}
+
+.lastcta p {
+  text-align: center;
+}
+
+.lastcta .lastcta-title {
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.lastcta .buttons-next-to-each-other {
+  padding-top: 3rem;
+}
+
+.lastcta .lastcta-title h2, .lastcta .lastcta-title .h2 {
+  z-index: 800;
+  position: relative;
+}
+
+.lastcta .lastcta-title svg {
+  fill: #fbe1d0;
+  opacity: .5;
+  width: 6.42181rem;
+  height: 6.42181rem;
+  position: absolute;
+}
+
+.lastcta .lastcta-title .decoration-1 {
+  z-index: 10;
+}
+
+.decoration-1 {
+  top: -25px;
+  left: 27%;
+}
+
+.decoration-2 {
+  top: -10px;
+  left: 63%;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

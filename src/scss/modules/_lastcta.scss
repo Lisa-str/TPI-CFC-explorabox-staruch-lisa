@@ -1,0 +1,48 @@
+/* lastcta ↓ */
+
+.lastcta {
+  position: relative;
+
+  p {
+    text-align: center;
+  }
+
+  .lastcta-title {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .buttons-next-to-each-other {
+    padding-top: 3rem;
+  }
+
+  .lastcta-title {
+    h2 {
+      position: relative;
+      z-index: 800;
+    }
+
+    svg {
+      fill: $color-secondary;
+      opacity: 0.5;
+      width: 6.42181rem;
+      height: 6.42181rem;
+      position: absolute;
+    }
+
+    .decoration-1 {
+      z-index: 10;
+    }
+  }
+}
+
+.decoration-1 {
+  left: 27%;
+  top: -25;
+}
+
+.decoration-2 {
+  left: 63%;
+  top: -10;
+}
