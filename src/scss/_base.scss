@@ -15,24 +15,14 @@ video {
   vertical-align: middle;
   user-select: none;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 /* base ↓ */
 html {
-  font-size: 20px;
+  font-size: 18px;
   scroll-behavior: smooth;
-  // font-family: $font-base;
-  background-color: $color-dark;
-  color: $color-light;
   transition: all 0.3s ease-in-out;
-}
-
-main {
-  position: relative;
-}
-
-p {
-  margin-bottom: 0;
 }
 
 /* carousel ↓ */
@@ -119,4 +109,19 @@ p {
 
 .l-button {
   gap: 0.62rem;
+}
+
+/* bento ↓ */
+
+.bento {
+  height: 100dvh;
+  display: flex;
+
+  img {
+    height: 100%;
+  }
+
+  .stretch-img {
+    flex-grow: 1;
+  }
 }

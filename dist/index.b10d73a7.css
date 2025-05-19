@@ -13522,6 +13522,7 @@ img, video {
   vertical-align: middle;
   -webkit-user-select: none;
   user-select: none;
+  object-fit: cover;
   border-radius: 10px;
   block-size: auto;
   max-inline-size: 100%;
@@ -13529,18 +13530,8 @@ img, video {
 
 html {
   scroll-behavior: smooth;
-  color: #fffdfb;
-  background-color: #192322;
-  font-size: 20px;
+  font-size: 18px;
   transition: all .3s ease-in-out;
-}
-
-main {
-  position: relative;
-}
-
-p {
-  margin-bottom: 0;
 }
 
 .carousel {
@@ -13605,5 +13596,18 @@ p {
 
 .l-button {
   gap: .62rem;
+}
+
+.bento {
+  height: 100dvh;
+  display: flex;
+}
+
+.bento img {
+  height: 100%;
+}
+
+.bento .stretch-img {
+  flex-grow: 1;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */
