@@ -20,7 +20,7 @@
 
   .box-icon {
     display: flex;
-    padding: 1.875rem;
+    padding: 1.875rem 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -31,6 +31,10 @@
     border-radius: 0.625rem;
     text-align: center;
     justify-content: center;
+
+    .fa-solid {
+      font-size: clamp(3rem, 5vw, 3rem);
+    }
   }
 }
 

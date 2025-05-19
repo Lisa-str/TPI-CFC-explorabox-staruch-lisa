@@ -14,7 +14,10 @@ $color-link-hover: lighten($color-accent, 10%);
 $color-text: $color-dark;
 
 //== Typography
-// $font-base: "Satoshi-Medium", Arial, sans-serif;
+$font-regular: "Poppins-Regular", Arial, sans-serif;
+$font-medium: "Poppins-Medium", Arial, sans-serif;
+$font-semibold: "Poppins-SemiBold", Arial, sans-serif;
+
 $text-base-size: 18px;
 $text-base-line-height: 1.5em;
 $title-base-line-height: 1.4em;

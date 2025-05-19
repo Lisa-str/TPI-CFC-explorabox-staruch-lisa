@@ -13503,6 +13503,30 @@ textarea.form-control-lg {
   content: "next";
 }
 
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("Poppins-Regular.001f7b6d.woff2") format("woff2"), url("Poppins-Regular.9d93ad8c.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("Poppins-Medium.2b0b803f.woff2") format("woff2"), url("Poppins-Medium.110ea9dd.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("Poppins-SemiBold.618d53f7.woff2") format("woff2"), url("Poppins-SemiBold.befbf217.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13530,8 +13554,53 @@ html {
   transition: all .3s ease-in-out;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: Poppins-SemiBold, Arial, sans-serif;
+}
+
+h1, .h1 {
+  font-size: clamp(1.8rem, 5vw, 1.8rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.2%;
+}
+
+h2, .h2 {
+  font-size: clamp(2rem, 5vw, 2rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8125rem;
+}
+
+h3, .h3 {
+  font-size: clamp(1.5rem, 5vw, 1.5rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8125rem;
+}
+
+h4, .h4 {
+  font-size: clamp(1.2rem, 5vw, 1.2rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
 p {
   margin-bottom: 0;
+  font-family: Poppins-Regular, Arial, sans-serif;
+  font-size: clamp(.8rem, 5vw, 1rem);
+  line-height: 1.4375rem;
+}
+
+.FAQ-title {
+  font-size: clamp(1.3rem, 5vw, 1.3rem);
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.sub-title, nav a, .button a, .button-second a, .FAQ-title {
+  font-family: Poppins-Medium, Arial, sans-serif;
 }
 
 h2, .h2 {
@@ -13640,8 +13709,12 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1.4375rem;
-  padding: 1.875rem;
+  padding: 1.875rem 1rem;
   display: flex;
+}
+
+.box-container .box-icon .fa-solid {
+  font-size: clamp(3rem, 5vw, 3rem);
 }
 
 .box-cta {
@@ -13692,6 +13765,8 @@ img {
 .card-testimonial {
   gap: 1rem;
   display: flex;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .card-testimonial .evaluation {
