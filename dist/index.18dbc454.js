@@ -588,15 +588,15 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _swiper = require("swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 var _modules = require("swiper/modules");
-const swiper = new (0, _swiperDefault.default)(".mySwiper", {
+const swiper = new (0, _swiperDefault.default)(".swiper-getaway", {
     modules: [
         (0, _modules.Navigation)
     ],
     slidesPerView: 1.2,
     spaceBetween: 16,
     navigation: {
-        nextEl: ".custom-controls .swiper-button-next",
-        prevEl: ".custom-controls .swiper-button-prev"
+        nextEl: ".getaway-button-next",
+        prevEl: ".getaway-button-prev"
     },
     breakpoints: {
         768: {
@@ -605,6 +605,17 @@ const swiper = new (0, _swiperDefault.default)(".mySwiper", {
         1024: {
             slidesPerView: 3
         }
+    }
+});
+const testimonialSwiper = new (0, _swiperDefault.default)(".swiper-testimonial", {
+    modules: [
+        (0, _modules.Navigation)
+    ],
+    slidesPerView: 1,
+    spaceBetween: 16,
+    navigation: {
+        nextEl: ".testimonial-button-next",
+        prevEl: ".testimonial-button-prev"
     }
 });
 

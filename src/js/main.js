@@ -1,13 +1,13 @@
 import Swiper from "swiper";
 import { Navigation } from "swiper/modules";
 
-const swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".swiper-getaway", {
   modules: [Navigation],
   slidesPerView: 1.2,
   spaceBetween: 16,
   navigation: {
-    nextEl: ".custom-controls .swiper-button-next", // ✅ ton bloc à toi
-    prevEl: ".custom-controls .swiper-button-prev",
+    nextEl: ".getaway-button-next",
+    prevEl: ".getaway-button-prev",
   },
   breakpoints: {
     768: {
@@ -16,5 +16,15 @@ const swiper = new Swiper(".mySwiper", {
     1024: {
       slidesPerView: 3,
     },
+  },
+});
+
+const testimonialSwiper = new Swiper(".swiper-testimonial", {
+  modules: [Navigation],
+  slidesPerView: 1,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".testimonial-button-next",
+    prevEl: ".testimonial-button-prev",
   },
 });

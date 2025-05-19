@@ -13538,14 +13538,22 @@ h2, .h2 {
   padding: 3rem 0;
 }
 
+svg {
+  fill: #fffdfb;
+}
+
+img {
+  width: 100%;
+}
+
 .swiper {
   padding-top: 5rem;
   position: relative;
 }
 
-.custom-controls .swiper-button-prev, .custom-controls .swiper-button-next {
+.custom-controls .getaway-button-prev, .custom-controls .getaway-button-next, .custom-controls .testimonial-button-prev, .custom-controls .testimonial-button-next {
   all: unset;
-  color: #fff;
+  color: #fffdfb;
   cursor: pointer;
   background-color: #ee6d17;
   border-radius: 10px;
@@ -13553,16 +13561,19 @@ h2, .h2 {
   align-items: center;
   padding: .75rem;
   font-size: 1.25rem;
+  transition: opacity .3s;
   display: inline-flex;
 }
 
-.custom-controls .swiper-button-prev:after, .custom-controls .swiper-button-next:after {
-  font-size: inherit;
-  color: #fff;
+.custom-controls .getaway-button-prev.swiper-button-disabled, .custom-controls .getaway-button-next.swiper-button-disabled, .custom-controls .testimonial-button-prev.swiper-button-disabled, .custom-controls .testimonial-button-next.swiper-button-disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: #fbe1d0;
 }
 
-.carousel {
-  display: flex;
+.custom-controls .getaway-button-prev.swiper-button-disabled svg, .custom-controls .getaway-button-next.swiper-button-disabled svg, .custom-controls .testimonial-button-prev.swiper-button-disabled svg, .custom-controls .testimonial-button-next.swiper-button-disabled svg {
+  fill: #192322;
+  opacity: .5;
 }
 
 .button {
@@ -13600,6 +13611,18 @@ h2, .h2 {
 
 .l-button {
   gap: .62rem;
+}
+
+.box {
+  color: #fffdfb;
+  background-color: #374c46;
+  border-radius: .625rem;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: .625rem;
+  padding: 1.875rem;
+  display: flex;
 }
 
 .box-container .row > * {
@@ -13646,7 +13669,7 @@ h2, .h2 {
 }
 
 .bento {
-  height: 100dvh;
+  height: 80dvh;
   display: flex;
 }
 
@@ -13656,5 +13679,35 @@ h2, .h2 {
 
 .bento .stretch-img {
   flex-grow: 1;
+}
+
+.bento .stretch-img .col-12 {
+  padding: 0;
+}
+
+.bento .side-bento, .bento .bento-two {
+  gap: 1rem;
+}
+
+.card-testimonial {
+  gap: 1rem;
+  display: flex;
+}
+
+.card-testimonial .evaluation {
+  color: #ee6d17;
+  flex-direction: row;
+  gap: .2rem;
+  font-size: 1.71113rem;
+  line-height: 2.35275rem;
+  display: flex;
+}
+
+.card-testimonial div {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: .8rem;
+  display: flex;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

@@ -5,28 +5,32 @@
 }
 
 .custom-controls {
-  .swiper-button-prev,
-  .swiper-button-next {
+  .getaway-button-prev,
+  .getaway-button-next,
+  .testimonial-button-prev,
+  .testimonial-button-next {
     all: unset;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
     background-color: $color-accent;
-    color: #fff;
+    color: $color-light;
     padding: 0.75rem;
     border-radius: 10px;
     font-size: 1.25rem;
     cursor: pointer;
+    transition: opacity 0.3s ease;
 
-    &::after {
-      font-size: inherit;
-      color: #fff;
+    &.swiper-button-disabled {
+      background-color: $color-secondary;
+      pointer-events: none;
+      cursor: default;
+
+      svg {
+        fill: $color-dark;
+        opacity: 0.5;
+      }
     }
   }
-}
-
-/* carousel ↓ */
-.carousel {
-  display: flex;
 }

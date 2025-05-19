@@ -1,7 +1,7 @@
 /* bento ↓ */
 
 .bento {
-  height: 100dvh;
+  height: 80dvh;
   display: flex;
 
   img {
@@ -10,5 +10,17 @@
 
   .stretch-img {
     flex-grow: 1;
+
+    .col-12 {
+      padding: 0;
+    }
+  }
+
+  .side-bento {
+    gap: 1rem;
+  }
+
+  .bento-two {
+    gap: 1rem;
   }
 }
