@@ -1,7 +1,6 @@
 /* bento ↓ */
 
 .bento {
-  height: 55dvh;
   gap: 1rem;
 
   h1 {
@@ -62,5 +61,35 @@
         height: 100%;
       }
     }
+  }
+  .bento-two {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .bento {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1300px) {
+  .bento {
+    height: 100vh;
+    gap: 0.3rem;
+
+    .side-bento {
+      gap: 0.5rem;
+    }
+  }
+
+  .bento-two {
+    gap: 0.5rem !important;
+
+    // .graphic-wrapper {
+    //   display: none;
+    // }
+
+    flex-direction: column;
   }
 }

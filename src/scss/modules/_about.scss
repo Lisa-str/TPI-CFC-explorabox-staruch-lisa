@@ -13,4 +13,12 @@
   img {
     border-radius: 0;
   }
+
+  .partners-wrapper {
+    display: flex;
+    gap: 4rem;
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+  }
 }

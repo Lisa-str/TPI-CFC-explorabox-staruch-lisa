@@ -13708,11 +13708,17 @@ img {
 
 .button-big {
   width: 100%;
-  padding: 2.31rem 2rem;
+  padding: 2rem 1.8rem;
 }
 
 .button-big a, .button-big .fa-solid {
   font-size: clamp(1.3rem, 2.5vw, 1.3rem);
+}
+
+@media screen and (width <= 768px) {
+  .button-big {
+    padding: 1.5rem 1rem;
+  }
 }
 
 .box {
@@ -13770,9 +13776,14 @@ img {
   transition: all .3s ease-in-out;
 }
 
+@media (width <= 1300px) {
+  .box {
+    padding: 1rem;
+  }
+}
+
 .bento {
   gap: 1rem;
-  height: 55dvh;
 }
 
 .bento h1, .bento .h1 {
@@ -13837,6 +13848,32 @@ img {
   .bento .big-img-bento img {
     height: 100%;
   }
+
+  .bento-two {
+    gap: .5rem;
+  }
+}
+
+@media (width <= 900px) {
+  .bento {
+    height: 70vh;
+  }
+}
+
+@media (width <= 1300px) {
+  .bento {
+    gap: .3rem;
+    height: 100vh;
+  }
+
+  .bento .side-bento {
+    gap: .5rem;
+  }
+
+  .bento-two {
+    flex-direction: column;
+    gap: .5rem !important;
+  }
 }
 
 .card-testimonial {
@@ -13885,8 +13922,17 @@ img {
   border-radius: 0;
 }
 
+.patners .partners-wrapper {
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 10%;
+  display: flex;
+}
+
 .concept-wrapper {
   padding: 5rem 0;
+  overflow: hidden;
 }
 
 .concept-wrapper .decoration {

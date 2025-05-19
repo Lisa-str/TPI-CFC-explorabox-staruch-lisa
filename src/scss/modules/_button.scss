@@ -40,11 +40,17 @@
 }
 
 .button-big {
-  padding: 2.31rem 2rem;
+  padding: 2rem 1.8rem;
   width: 100%;
 
   a,
   .fa-solid {
     font-size: clamp(1.3rem, 2.5vw, 1.3rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button-big {
+    padding: 1.5rem 1rem;
   }
 }
