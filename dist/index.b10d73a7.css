@@ -13885,11 +13885,38 @@ img {
   border-radius: 0;
 }
 
-.container-concept {
+.concept-wrapper {
+  padding: 5rem 0;
+}
+
+.concept-wrapper .decoration {
+  position: relative;
+}
+
+.concept-wrapper .decoration .decoration-1 {
+  top: -25px;
+  left: -7%;
+}
+
+.concept-wrapper .decoration .decoration-2 {
+  top: 400px;
+  left: 92%;
+}
+
+.concept-wrapper .decoration svg {
+  fill: #fbe1d0;
+  opacity: .5;
+  z-index: -1;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+}
+
+.concept-wrapper .container-concept {
   gap: 1.5rem;
 }
 
-.concept h2, .concept .h2 {
+.concept-wrapper .concept h2, .concept-wrapper .concept .h2 {
   text-align: center;
 }
 

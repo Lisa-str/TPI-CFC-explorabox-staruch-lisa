@@ -1,11 +1,37 @@
 /* concept ↓ */
 
-.container-concept {
-  gap: 1.5rem;
-}
+.concept-wrapper {
+  padding: 5rem 0;
+  .decoration {
+    position: relative;
 
-.concept {
-  h2 {
-    text-align: center;
+    .decoration-1 {
+      left: -7%;
+      top: -25;
+    }
+
+    .decoration-2 {
+      left: 92%;
+      top: 400px;
+    }
+
+    svg {
+      fill: $color-secondary;
+      opacity: 0.5;
+      width: 10rem;
+      height: 10rem;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .container-concept {
+    gap: 1.5rem;
+  }
+
+  .concept {
+    h2 {
+      text-align: center;
+    }
   }
 }
