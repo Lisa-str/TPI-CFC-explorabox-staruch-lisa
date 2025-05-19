@@ -23,3 +23,10 @@
     gap: 0.8rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .card-testimonial {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

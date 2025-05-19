@@ -4,6 +4,11 @@
   height: 80dvh;
   display: flex;
 
+  .big-img-bento {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
   img {
     height: 100%;
   }
@@ -22,5 +27,19 @@
 
   .bento-two {
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bento {
+    height: auto;
+
+    .big-img-bento {
+      height: 20%;
+
+      img {
+        height: 20%;
+      }
+    }
   }
 }

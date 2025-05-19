@@ -13559,28 +13559,28 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 h1, .h1 {
-  font-size: clamp(1.8rem, 5vw, 1.8rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   font-style: normal;
   font-weight: 500;
   line-height: 120.2%;
 }
 
 h2, .h2 {
-  font-size: clamp(2rem, 5vw, 2rem);
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
   font-style: normal;
   font-weight: 500;
   line-height: 2.8125rem;
 }
 
 h3, .h3 {
-  font-size: clamp(1.5rem, 5vw, 1.5rem);
+  font-size: clamp(.8rem, 2.5vw, 1.35rem);
   font-style: normal;
   font-weight: 500;
   line-height: 1.8125rem;
 }
 
 h4, .h4 {
-  font-size: clamp(1.2rem, 5vw, 1.2rem);
+  font-size: clamp(.6rem, 2.5vw, 1.2rem);
   font-style: normal;
   font-weight: 500;
   line-height: 3rem;
@@ -13589,12 +13589,12 @@ h4, .h4 {
 p {
   margin-bottom: 0;
   font-family: Poppins-Regular, Arial, sans-serif;
-  font-size: clamp(.8rem, 5vw, 1rem);
+  font-size: clamp(.8rem, 2.5vw, 1rem);
   line-height: 1.4375rem;
 }
 
 .FAQ-title {
-  font-size: clamp(1.3rem, 5vw, 1.3rem);
+  font-size: clamp(1.3rem, 2.5vw, 1.3rem);
   font-weight: 500;
   line-height: 3rem;
 }
@@ -13613,6 +13613,16 @@ svg {
 
 img {
   width: 100%;
+}
+
+@media screen and (width <= 768px) {
+  .row {
+    justify-content: center;
+  }
+
+  .box-container {
+    gap: .5rem;
+  }
 }
 
 .swiper {
@@ -13724,8 +13734,12 @@ img {
   border-radius: .625rem;
   justify-content: space-between;
   align-items: center;
-  padding: .875rem 2rem;
+  padding: 2rem;
   display: flex;
+}
+
+.box-cta .fa-solid {
+  font-size: clamp(2rem, 5vw, 2rem);
 }
 
 .box-cta:hover {
@@ -13746,6 +13760,11 @@ img {
   display: flex;
 }
 
+.bento .big-img-bento {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .bento img {
   height: 100%;
 }
@@ -13760,6 +13779,16 @@ img {
 
 .bento .side-bento, .bento .bento-two {
   gap: 1rem;
+}
+
+@media screen and (width <= 768px) {
+  .bento {
+    height: auto;
+  }
+
+  .bento .big-img-bento, .bento .big-img-bento img {
+    height: 20%;
+  }
 }
 
 .card-testimonial {
@@ -13784,5 +13813,16 @@ img {
   align-items: flex-start;
   gap: .8rem;
   display: flex;
+}
+
+@media screen and (width <= 768px) {
+  .card-testimonial {
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
+
+.about-content {
+  gap: 3.12rem;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

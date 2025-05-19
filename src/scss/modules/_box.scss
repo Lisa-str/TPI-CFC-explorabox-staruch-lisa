@@ -40,13 +40,17 @@
 
 .box-cta {
   display: flex;
-  padding: 0.875rem 2rem;
+  padding: 2rem 2rem;
   justify-content: space-between;
   align-items: center;
   border-radius: 0.625rem;
   background-color: $color-accent;
   color: $color-light;
   cursor: pointer;
+
+  .fa-solid {
+    font-size: clamp(2rem, 5vw, 2rem);
+  }
 }
 
 .box-cta:hover {

@@ -34,28 +34,28 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(1.8rem, 5vw, 1.8rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   font-style: normal;
   font-weight: 500;
   line-height: 120.2%;
 }
 
 h2 {
-  font-size: clamp(2rem, 5vw, 2rem);
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
   font-style: normal;
   font-weight: 500;
   line-height: 2.8125rem;
 }
 
 h3 {
-  font-size: clamp(1.5rem, 5vw, 1.5rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.35rem);
   font-style: normal;
   font-weight: 500;
   line-height: 1.8125rem;
 }
 
 h4 {
-  font-size: clamp(1.2rem, 5vw, 1.2rem);
+  font-size: clamp(0.6rem, 2.5vw, 1.2rem);
   font-style: normal;
   font-weight: 500;
   line-height: 3rem; /* 111.628% */
@@ -64,12 +64,12 @@ h4 {
 p {
   margin-bottom: 0;
   font-family: $font-regular;
-  font-size: clamp(0.8rem, 5vw, 1rem);
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
   line-height: 1.4375rem;
 }
 
 .FAQ-title {
-  font-size: clamp(1.3rem, 5vw, 1.3rem);
+  font-size: clamp(1.3rem, 2.5vw, 1.3rem);
   font-weight: 500;
   line-height: 3rem; /* 111.628% */
 }
@@ -105,4 +105,14 @@ svg {
 
 img {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    justify-content: center;
+  }
+
+  .box-container {
+    gap: 0.5rem;
+  }
 }
