@@ -1,1 +1,71 @@
 /* footer ↓ */
+
+.footer {
+  padding: 1.25rem 0;
+  background-color: $color-light;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+
+  a {
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  form {
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  .cta-download {
+    color: $color-light;
+  }
+
+  .legal-mentions {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: start;
+  }
+
+  .box-1 {
+    .footer-nav {
+      display: flex;
+      gap: 0.6rem;
+      flex-direction: column;
+    }
+  }
+
+  .box-3 {
+    align-items: center;
+    .socials {
+      display: flex;
+      gap: 0.8rem;
+      justify-content: end;
+
+      i {
+        font-size: clamp(2rem, 2vw, 2.4rem);
+        color: $color-light;
+      }
+    }
+  }
+
+  p,
+  a {
+    font-size: clamp(0.8rem, 1.5vw, 1rem) !important;
+    font-family: $font-regular;
+    color: $color-light;
+  }
+}
+
+// @media screen and (max-width: 768px) {
+
+// }

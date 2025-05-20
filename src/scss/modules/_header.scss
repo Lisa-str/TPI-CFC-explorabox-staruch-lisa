@@ -1,3 +1,5 @@
+/* header ↓ */
+
 .header {
   z-index: 1000;
   position: sticky;
@@ -21,6 +23,7 @@
   .header-primary-navigation {
     flex-grow: 1;
     justify-content: space-between;
+    width: fit-content;
   }
 
   .desktop-nav {
@@ -43,18 +46,6 @@
 
       &:hover {
         color: $color-accent;
-      }
-    }
-  }
-
-  .desktop-language {
-    .dropdown-toggle {
-      color: $color-light;
-    }
-    .dropdown-menu {
-      background: $color-light;
-      .dropdown-item {
-        color: $color-dark;
       }
     }
   }
@@ -83,7 +74,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 90%;
+  width: 70%;
   height: 100%;
   border-radius: 10px 0 0 10px;
   background-color: $color-primary;
@@ -128,7 +119,7 @@
 
     a {
       font-family: $font-regular;
-      font-size: 1.2rem;
+      font-size: 1.8rem !important;
       color: $color-light;
       text-decoration: none;
       transition: color 0.3s ease-in-out;
@@ -138,16 +129,8 @@
       }
     }
 
-    .mobile-language {
-      .dropdown-toggle {
-        color: $color-light;
-      }
-      .dropdown-menu {
-        background: $color-light;
-        .dropdown-item {
-          color: $color-dark;
-        }
-      }
+    .button-big {
+      font-size: clamp(0.8rem, 2.5vw, 1rem) !important;
     }
 
     .socials {
@@ -157,6 +140,12 @@
       font-size: 1.5rem;
       color: $color-light;
       justify-content: center;
+
+      .fa-brands {
+        font-size: 2rem;
+        color: $color-light;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -218,5 +207,9 @@
   }
   .links-mobile-toggle {
     display: flex !important;
+  }
+
+  .header-primary-navigation {
+    width: 50% !important;
   }
 }

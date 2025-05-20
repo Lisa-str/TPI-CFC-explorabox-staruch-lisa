@@ -1,0 +1,11 @@
+/* dropdown ↓ */
+
+.dropdown-toggle {
+  color: $color-light;
+}
+.dropdown-menu {
+  background: $color-light;
+  .dropdown-item {
+    color: $color-dark;
+  }
+}
