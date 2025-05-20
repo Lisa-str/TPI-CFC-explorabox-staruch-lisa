@@ -13861,6 +13861,23 @@ img {
   }
 }
 
+.box-explanation {
+  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 15rem;
+  display: flex;
+}
+
+.box-explanation .box-explanation-number {
+  text-align: center;
+  font-family: Poppins-SemiBold, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.875rem;
+  font-size: clamp(2rem, 5vw, 2.3rem) !important;
+}
+
 .accordion {
   flex-direction: column;
   gap: 1rem;
@@ -14183,6 +14200,11 @@ form input {
     top: 252px;
     left: 110%;
   }
+}
+
+.concept-how-wrapper {
+  gap: 1rem 0;
+  display: flex;
 }
 
 .lastcta {
