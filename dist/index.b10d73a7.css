@@ -13782,6 +13782,43 @@ img {
   }
 }
 
+.box-numbers {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: .2rem;
+  height: 11rem;
+  display: flex;
+}
+
+.box-numbers h4, .box-numbers .h4 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.75rem;
+}
+
+@media screen and (width <= 894px) {
+  .box-numbers {
+    height: 13rem;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .box-numbers {
+    height: auto;
+  }
+
+  .box-numbers h4, .box-numbers .h4 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .data-content {
+    gap: .5rem;
+  }
+}
+
 .bento {
   gap: 1rem;
 }
@@ -13930,6 +13967,12 @@ img {
   display: flex;
 }
 
+@media screen and (width <= 768px) {
+  .about-content {
+    padding-top: 2rem;
+  }
+}
+
 .concept-wrapper {
   padding: 5rem 0;
   position: relative;
@@ -13938,8 +13981,8 @@ img {
 .concept-wrapper .decoration-1 {
   z-index: -1;
   position: absolute;
-  top: -25px;
-  left: -91px;
+  top: 1%;
+  left: -7%;
 }
 
 .concept-wrapper .decoration-2 {
@@ -13964,18 +14007,18 @@ img {
   text-align: center;
 }
 
-@media screen and (width <= 768px) {
+@media screen and (width <= 1024px) {
   .concept-wrapper {
     overflow: hidden;
   }
 
   .concept-wrapper .decoration-1 {
     top: 2%;
-    left: -11%;
+    left: -2%;
   }
 
   .concept-wrapper .decoration-2 {
-    left: 86%;
+    left: 82%;
   }
 
   .concept-wrapper .container-concept {

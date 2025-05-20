@@ -5,8 +5,8 @@
   position: relative;
 
   .decoration-1 {
-    left: -91px;
-    top: -25px;
+    left: -7%;
+    top: 1%;
     position: absolute;
     z-index: -1;
   }
@@ -36,17 +36,17 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .concept-wrapper {
     overflow: hidden;
 
     .decoration-1 {
       top: 2%;
-      left: -11%;
+      left: -2%;
     }
 
     .decoration-2 {
-      left: 86%;
+      left: 82%;
     }
 
     .container-concept {
