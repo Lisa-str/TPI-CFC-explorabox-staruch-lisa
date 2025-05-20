@@ -7,7 +7,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  width: fit-content;
+  width: fit-content !important;
 
   display: flex;
   padding: 0.5rem 1rem;
@@ -17,11 +17,26 @@
 
   &:hover {
     background-color: $color-accent-hover;
+    color: $color-secondary-hover;
 
     i {
       color: $color-dark;
     }
   }
+
+  a {
+    color: $color-light;
+    line-height: normal;
+
+    &:hover {
+      color: $color-secondary-hover;
+    }
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 0.625rem;
 }
 
 .button-second {
@@ -30,13 +45,17 @@
 
   &:hover {
     background-color: $color-secondary-hover;
-    color: $color-dark;
+    color: $color-accent-hover;
   }
-}
 
-.button-wrapper {
-  display: flex;
-  gap: 0.62rem;
+  a {
+    color: $color-dark;
+    line-height: normal;
+
+    &:hover {
+      color: $color-accent-hover;
+    }
+  }
 }
 
 .button-big {

@@ -24,12 +24,12 @@
   .bento-two {
     gap: 1rem;
     flex-wrap: nowrap;
+  }
 
-    .text-wrapper {
-      flex: 1;
-      white-space: normal;
-      word-break: break-word;
-    }
+  .text-wrapper {
+    flex: 1;
+    white-space: normal;
+    word-break: break-word;
   }
 
   .stretch-img {
@@ -55,6 +55,7 @@
   .bento {
     flex-direction: column;
     height: auto;
+
     .big-img-bento {
       height: 20vh;
       img {
@@ -71,6 +72,10 @@
   .bento {
     height: 70vh;
   }
+
+  .mini-bento {
+    height: 100%;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -80,6 +85,15 @@
 
     .side-bento {
       gap: 0.5rem;
+    }
+  }
+
+  .mini-bento {
+    height: 100%;
+
+    .graphic-wrapper {
+      display: flex;
+      flex-grow: 1;
     }
   }
 

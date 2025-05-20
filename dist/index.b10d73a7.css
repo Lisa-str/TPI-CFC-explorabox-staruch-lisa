@@ -13556,7 +13556,7 @@ h3, .h3 {
   font-style: normal;
   font-weight: 500;
   line-height: 1.8125rem;
-  font-size: clamp(1.3rem, 2.5vw, 1.5rem) !important;
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem) !important;
 }
 
 h4, .h4, .sub-title {
@@ -13695,19 +13695,34 @@ img {
   justify-content: center;
   align-items: center;
   gap: .625rem;
-  width: fit-content;
   padding: .5rem 1rem;
   line-height: 1;
   transition: all .3s ease-in-out;
   display: flex;
+  width: fit-content !important;
 }
 
 .button:hover {
+  color: #e69b6e;
   background-color: #af4506;
 }
 
 .button:hover i {
   color: #192322;
+}
+
+.button a {
+  color: #fffdfb;
+  line-height: normal;
+}
+
+.button a:hover {
+  color: #e69b6e;
+}
+
+.button-wrapper {
+  gap: .625rem;
+  display: flex;
 }
 
 .button-second {
@@ -13716,13 +13731,17 @@ img {
 }
 
 .button-second:hover {
-  color: #192322;
+  color: #af4506;
   background-color: #e69b6e;
 }
 
-.button-wrapper {
-  gap: .62rem;
-  display: flex;
+.button-second a {
+  color: #192322;
+  line-height: normal;
+}
+
+.button-second a:hover {
+  color: #af4506;
 }
 
 .button-big {
@@ -13750,6 +13769,10 @@ img {
   gap: .625rem;
   padding: 1.875rem;
   display: flex;
+}
+
+.box-h1 {
+  justify-content: flex-start;
 }
 
 .box-container .row > * {
@@ -13911,6 +13934,42 @@ form input {
   color: #192322;
 }
 
+.card-getaway {
+  background-color: #fffdfb;
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  display: flex;
+  box-shadow: 0 0 4px #00000024;
+}
+
+.card-getaway img {
+  width: 100%;
+  height: 12rem;
+}
+
+.card-getaway .price {
+  padding-bottom: 1.5rem;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.125rem;
+}
+
+.card-getaway p {
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.getaway-all {
+  gap: 1.5rem 0;
+  display: flex;
+}
+
 .bento {
   gap: 1rem;
 }
@@ -13939,7 +13998,7 @@ form input {
   gap: 1rem;
 }
 
-.bento .bento-two .text-wrapper {
+.bento .text-wrapper {
   white-space: normal;
   word-break: break-word;
   flex: 1;
@@ -13985,6 +14044,10 @@ form input {
   .bento {
     height: 70vh;
   }
+
+  .mini-bento {
+    height: 100%;
+  }
 }
 
 @media (width <= 1300px) {
@@ -13995,6 +14058,15 @@ form input {
 
   .bento .side-bento {
     gap: .5rem;
+  }
+
+  .mini-bento {
+    height: 100%;
+  }
+
+  .mini-bento .graphic-wrapper {
+    flex-grow: 1;
+    display: flex;
   }
 
   .bento-two {
