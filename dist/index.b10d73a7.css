@@ -13872,7 +13872,7 @@ img {
   padding: 0 !important;
 }
 
-@media (width <= 768px) {
+@media (width <= 900px) {
   .bento {
     flex-direction: column;
     height: auto;
@@ -13889,9 +13889,7 @@ img {
   .bento-two {
     gap: .5rem;
   }
-}
 
-@media (width <= 900px) {
   .bento {
     height: 70vh;
   }
@@ -14127,6 +14125,226 @@ img {
   .lastcta .decoration-2 {
     top: -10px;
     left: 73%;
+  }
+}
+
+.header {
+  z-index: 1000;
+  background-color: #fffdfb;
+  border-radius: 10px;
+  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+}
+
+.header .col-12 {
+  gap: 1.25rem;
+}
+
+.header .box {
+  align-items: center;
+  gap: 3rem;
+  height: 100%;
+  padding: 1.2rem 2rem;
+  display: flex;
+}
+
+.header .header-primary-navigation {
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.header .desktop-nav {
+  gap: 2rem;
+  display: flex;
+}
+
+.header .desktop-nav .links {
+  align-items: center;
+  gap: 1.3rem;
+  display: flex;
+}
+
+.header .desktop-nav a {
+  color: #fffdfb;
+  font-family: Poppins-Regular, Arial, sans-serif;
+  line-height: 1.4375rem;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+  font-size: clamp(.7rem, 2.5vw, 1.2rem) !important;
+}
+
+.header .desktop-nav a:hover {
+  color: #ee6d17;
+}
+
+.header .desktop-language .dropdown-toggle {
+  color: #fffdfb;
+}
+
+.header .desktop-language .dropdown-menu {
+  background: #fffdfb;
+}
+
+.header .desktop-language .dropdown-menu .dropdown-item {
+  color: #192322;
+}
+
+.header .button.button-big {
+  align-items: center;
+  width: auto;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+}
+
+.header .links-mobile-toggle {
+  cursor: pointer;
+  align-items: center;
+  display: none;
+}
+
+.header .links-mobile-toggle i {
+  color: #fffdfb;
+  font-size: 2rem;
+}
+
+.menu-mobile {
+  z-index: 2000;
+  background-color: #374c46;
+  border-radius: 10px 0 0 10px;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 90%;
+  height: 100%;
+  padding: 2rem;
+  transition: transform .3s ease-in-out;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.menu-mobile.active {
+  transform: translateX(0);
+}
+
+.menu-mobile .menu-header {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.menu-mobile .menu-header img {
+  width: 50%;
+}
+
+.menu-mobile .menu-header i {
+  color: #fffdfb;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.menu-mobile .mobile-nav {
+  text-align: end;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  gap: 3rem;
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.menu-mobile .mobile-nav a {
+  color: #fffdfb;
+  font-family: Poppins-Regular, Arial, sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+}
+
+.menu-mobile .mobile-nav a:hover {
+  color: #ee6d17;
+}
+
+.menu-mobile .mobile-nav .mobile-language .dropdown-toggle {
+  color: #fffdfb;
+}
+
+.menu-mobile .mobile-nav .mobile-language .dropdown-menu {
+  background: #fffdfb;
+}
+
+.menu-mobile .mobile-nav .mobile-language .dropdown-menu .dropdown-item {
+  color: #192322;
+}
+
+.menu-mobile .mobile-nav .socials {
+  color: #fffdfb;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: auto;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+#menu-overlay {
+  z-index: 1500;
+  background: #00000080;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#menu-overlay.active {
+  display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media (width >= 1400px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+
+  .desktop-language {
+    display: block !important;
+  }
+
+  .links-mobile-toggle {
+    display: none !important;
+  }
+}
+
+@media (width >= 992px) and (width <= 1399px) {
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .desktop-language {
+    display: block !important;
+  }
+
+  .links-mobile-toggle {
+    display: flex !important;
+  }
+}
+
+@media (width <= 991px) {
+  .desktop-nav, .desktop-language, .button.button-big {
+    display: none !important;
+  }
+
+  .links-mobile-toggle {
+    display: flex !important;
   }
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

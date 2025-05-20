@@ -51,7 +51,7 @@
 }
 
 /* responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .bento {
     flex-direction: column;
     height: auto;
@@ -85,11 +85,6 @@
 
   .bento-two {
     gap: 0.5rem !important;
-
-    // .graphic-wrapper {
-    //   display: none;
-    // }
-
     flex-direction: column;
   }
 }
