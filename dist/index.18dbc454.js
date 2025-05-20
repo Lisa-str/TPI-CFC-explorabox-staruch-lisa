@@ -592,7 +592,7 @@ const swiper = new (0, _swiperDefault.default)(".swiper-getaway", {
     modules: [
         (0, _modules.Navigation)
     ],
-    slidesPerView: 1.2,
+    slidesPerView: 1,
     spaceBetween: 16,
     navigation: {
         nextEl: ".getaway-button-next",
@@ -600,7 +600,7 @@ const swiper = new (0, _swiperDefault.default)(".swiper-getaway", {
     },
     breakpoints: {
         768: {
-            slidesPerView: 2.2
+            slidesPerView: 1
         },
         1024: {
             slidesPerView: 3

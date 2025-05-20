@@ -3,7 +3,7 @@ import { Navigation } from "swiper/modules";
 
 const swiper = new Swiper(".swiper-getaway", {
   modules: [Navigation],
-  slidesPerView: 1.2,
+  slidesPerView: 1,
   spaceBetween: 16,
   navigation: {
     nextEl: ".getaway-button-next",
@@ -11,7 +11,7 @@ const swiper = new Swiper(".swiper-getaway", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 2.2,
+      slidesPerView: 1,
     },
     1024: {
       slidesPerView: 3,

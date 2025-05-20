@@ -3,6 +3,16 @@
 .lastcta {
   position: relative;
 
+  .decoration-1 {
+    left: 27%;
+    top: -25;
+  }
+
+  .decoration-2 {
+    left: 63%;
+    top: -10;
+  }
+
   p {
     text-align: center;
   }
@@ -37,12 +47,16 @@
   }
 }
 
-.decoration-1 {
-  left: 27%;
-  top: -25;
-}
+@media screen and (max-width: 768px) {
+  .lastcta {
+    .decoration-1 {
+      left: -3%;
+      top: -3%;
+    }
 
-.decoration-2 {
-  left: 63%;
-  top: -10;
+    .decoration-2 {
+      left: 73%;
+      top: -10;
+    }
+  }
 }

@@ -2,28 +2,27 @@
 
 .concept-wrapper {
   padding: 5rem 0;
-  overflow: hidden;
-  .decoration {
-    position: relative;
+  position: relative;
 
-    .decoration-1 {
-      left: -7%;
-      top: -25;
-    }
+  .decoration-1 {
+    left: -91px;
+    top: -25px;
+    position: absolute;
+    z-index: -1;
+  }
 
-    .decoration-2 {
-      left: 92%;
-      top: 400px;
-    }
+  .decoration-2 {
+    left: 90%;
+    top: 80%;
+    position: absolute;
+    z-index: -1;
+  }
 
-    svg {
-      fill: $color-secondary;
-      opacity: 0.5;
-      width: 10rem;
-      height: 10rem;
-      position: absolute;
-      z-index: -1;
-    }
+  svg {
+    fill: $color-secondary;
+    opacity: 0.5;
+    width: 10rem;
+    height: 10rem;
   }
 
   .container-concept {
@@ -33,6 +32,25 @@
   .concept {
     h2 {
       text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .concept-wrapper {
+    overflow: hidden;
+
+    .decoration-1 {
+      top: 2%;
+      left: -11%;
+    }
+
+    .decoration-2 {
+      left: 86%;
+    }
+
+    .container-concept {
+      gap: 0.5rem;
     }
   }
 }
