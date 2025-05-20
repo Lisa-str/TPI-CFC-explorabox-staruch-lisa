@@ -1,21 +1,26 @@
 /* concept ↓ */
 
-.concept-wrapper {
-  padding: 5rem 0;
+.concept {
+  gap: 1.5rem;
   position: relative;
+  overflow: hidden;
+
+  .decoration {
+    position: relative;
+  }
 
   .decoration-1 {
-    left: -7%;
-    top: 1%;
-    position: absolute;
-    z-index: -1;
+    top: -140px;
+    left: -21%;
   }
 
   .decoration-2 {
-    left: 90%;
-    top: 80%;
-    position: absolute;
-    z-index: -1;
+    top: 252px;
+    left: 110%;
+  }
+
+  h2 {
+    text-align: center;
   }
 
   svg {
@@ -23,34 +28,26 @@
     opacity: 0.5;
     width: 10rem;
     height: 10rem;
+    position: absolute;
   }
 
   .container-concept {
-    gap: 1.5rem;
-  }
-
-  .concept {
-    h2 {
-      text-align: center;
-    }
+    gap: 1rem;
+    z-index: 20;
+    position: relative;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .concept-wrapper {
-    overflow: hidden;
-
+@media screen and (max-width: 768px) {
+  .container {
     .decoration-1 {
-      top: 2%;
-      left: -2%;
+      top: -140px;
+      left: -38%;
     }
 
     .decoration-2 {
-      left: 82%;
-    }
-
-    .container-concept {
-      gap: 0.5rem;
+      top: 252px;
+      left: 110%;
     }
   }
 }

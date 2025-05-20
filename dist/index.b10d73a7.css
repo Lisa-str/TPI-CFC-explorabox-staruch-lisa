@@ -13614,10 +13614,13 @@ html {
 }
 
 main {
-  background-color: #fffdfb;
   flex-direction: column;
   gap: 4.6rem;
   display: flex;
+}
+
+body {
+  background-color: #fffdfb !important;
 }
 
 svg {
@@ -14060,56 +14063,53 @@ form input {
   }
 }
 
-.concept-wrapper {
-  padding: 5rem 0;
+.concept {
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.concept .decoration {
   position: relative;
 }
 
-.concept-wrapper .decoration-1 {
-  z-index: -1;
-  position: absolute;
-  top: 1%;
-  left: -7%;
+.concept .decoration-1 {
+  top: -140px;
+  left: -21%;
 }
 
-.concept-wrapper .decoration-2 {
-  z-index: -1;
-  position: absolute;
-  top: 80%;
-  left: 90%;
+.concept .decoration-2 {
+  top: 252px;
+  left: 110%;
 }
 
-.concept-wrapper svg {
+.concept h2, .concept .h2 {
+  text-align: center;
+}
+
+.concept svg {
   fill: #fbe1d0;
   opacity: .5;
   width: 10rem;
   height: 10rem;
+  position: absolute;
 }
 
-.concept-wrapper .container-concept {
-  gap: 1.5rem;
+.concept .container-concept {
+  z-index: 20;
+  gap: 1rem;
+  position: relative;
 }
 
-.concept-wrapper .concept h2, .concept-wrapper .concept .h2 {
-  text-align: center;
-}
-
-@media screen and (width <= 1024px) {
-  .concept-wrapper {
-    overflow: hidden;
+@media screen and (width <= 768px) {
+  .container .decoration-1 {
+    top: -140px;
+    left: -38%;
   }
 
-  .concept-wrapper .decoration-1 {
-    top: 2%;
-    left: -2%;
-  }
-
-  .concept-wrapper .decoration-2 {
-    left: 82%;
-  }
-
-  .concept-wrapper .container-concept {
-    gap: .5rem;
+  .container .decoration-2 {
+    top: 252px;
+    left: 110%;
   }
 }
 
@@ -14122,6 +14122,7 @@ form input {
 }
 
 .lastcta .decoration-1 {
+  z-index: 10;
   top: -25px;
   left: 27%;
 }
@@ -14156,10 +14157,6 @@ form input {
   width: 6.42181rem;
   height: 6.42181rem;
   position: absolute;
-}
-
-.lastcta .lastcta-title .decoration-1 {
-  z-index: 10;
 }
 
 @media screen and (width <= 768px) {
