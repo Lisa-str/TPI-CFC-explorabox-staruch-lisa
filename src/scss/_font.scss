@@ -68,7 +68,7 @@ p,
 a {
   margin-bottom: 0 !important;
   font-family: $font-regular;
-  font-size: clamp(0.8rem, 2.5vw, 1rem) !important;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
   line-height: 1.4375rem;
 }
 

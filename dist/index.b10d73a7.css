@@ -13568,9 +13568,9 @@ h4, .h4, .sub-title {
 
 p, a {
   font-family: Poppins-Regular, Arial, sans-serif;
+  font-size: clamp(.8rem, 2.5vw, 1rem);
   line-height: 1.4375rem;
   margin-bottom: 0 !important;
-  font-size: clamp(.8rem, 2.5vw, 1rem) !important;
 }
 
 .accordion-header h3, .accordion-header .h3 {
@@ -14053,6 +14053,10 @@ form input {
   height: 100%;
 }
 
+.bento h1.bento-title-homepage, .bento .bento-title-homepage.h1 {
+  font-size: clamp(1.2rem, 2.5vw, 2.2rem) !important;
+}
+
 @media (width <= 900px) {
   .bento {
     flex-direction: column;
@@ -14071,14 +14075,37 @@ form input {
     height: 70vh;
   }
 
+  .bento .graphic-wrapper {
+    display: none;
+  }
+
   .mini-bento {
     height: 100%;
   }
 }
 
+@media (width <= 1100px) {
+  .bento {
+    height: 110vh;
+  }
+
+  .mini-bento {
+    height: 100%;
+  }
+
+  .mini-bento .graphic-wrapper {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  .bento-two {
+    flex-direction: column;
+  }
+}
+
 @media (width <= 1300px) {
   .bento {
-    height: 100vh;
+    height: 80vh;
   }
 
   .mini-bento {
@@ -14158,25 +14185,20 @@ form input {
 .concept {
   gap: 1.5rem;
   position: relative;
-  overflow: hidden;
 }
 
 .concept .box-icon {
   height: 100%;
 }
 
-.concept .decoration {
-  position: relative;
-}
-
 .concept .decoration-1 {
-  top: -140px;
-  left: -21%;
+  top: -2.3rem;
+  left: -14rem;
 }
 
 .concept .decoration-2 {
-  top: 252px;
-  left: 110%;
+  bottom: -2.3rem;
+  right: -14rem;
 }
 
 .concept h2, .concept .h2 {
@@ -14198,14 +14220,26 @@ form input {
 }
 
 @media screen and (width <= 768px) {
-  .container .decoration-1 {
-    top: -140px;
-    left: -38%;
+  .concept {
+    overflow: hidden;
   }
 
-  .container .decoration-2 {
-    top: 252px;
-    left: 110%;
+  .concept .decoration-1 {
+    top: 0;
+  }
+
+  .concept .decoration-2 {
+    bottom: 0;
+  }
+
+  .box-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 !important;
+  }
+
+  .box-wrapper .box-icon {
+    width: 100%;
   }
 }
 
