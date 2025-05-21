@@ -66,18 +66,20 @@ overlay.addEventListener("click", () => {
 /* FORMULAIRE PAGE 1 */
 
 document.addEventListener("DOMContentLoaded", () => {
-  const minusBtn = document.querySelector(".minus");
-  const plusBtn = document.querySelector(".plus");
-  const quantityInput = document.querySelector(".quantity");
-  const datesContainer = document.getElementById("dates-container");
+  const mainQuantityInput = document.querySelector(".quantity");
   const themeCount = document.getElementById("theme-count");
+  const datesContainer = document.getElementById("dates-container");
 
-  function updateButtons() {
-    const current = parseInt(quantityInput.value);
-    const min = parseInt(quantityInput.min);
-    const max = parseInt(quantityInput.max);
-    minusBtn.disabled = current <= min;
-    plusBtn.disabled = current >= max;
+  const quantityInputs = document.querySelectorAll(".quantity");
+  const adultInput = quantityInputs[1];
+  const childInput = quantityInputs[2];
+
+  const mobilityContainer = document.querySelector(
+    ".big-booking-person .l-space-column-mini"
+  );
+
+  function updateThemeCount(count) {
+    themeCount.textContent = count;
   }
 
   function renderDatePickers(count) {
@@ -104,35 +106,89 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function updateThemeCount(count) {
-    themeCount.textContent = count;
+  function renderMobilitySections(adultCount, childCount) {
+    mobilityContainer.innerHTML = "";
+
+    for (let i = 1; i <= adultCount; i++) {
+      mobilityContainer.appendChild(createMobilityBlock("Adulte", i));
+    }
+
+    for (let i = 1; i <= childCount; i++) {
+      mobilityContainer.appendChild(createMobilityBlock("Enfant", i));
+    }
   }
 
-  function refreshAll(count) {
+  function createMobilityBlock(type, index) {
+    const section = document.createElement("div");
+    section.className = "l-space-column-mini";
+    section.innerHTML = `
+      <h5 class="obligatory">${type} ${index} :</h5>
+      <div class="l-space-column-mini">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="${type}-${index}" id="demi-${type}-${index}">
+          <label class="form-check-label" for="demi-${type}-${index}">Abonnement demi-tarif</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="${type}-${index}" id="ag-${type}-${index}">
+          <label class="form-check-label" for="ag-${type}-${index}">Abonnement général (AG)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="${type}-${index}" id="pass-${type}-${index}">
+          <label class="form-check-label" for="pass-${type}-${index}">Swiss Travel Pass</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="${type}-${index}" id="none-${type}-${index}">
+          <label class="form-check-label" for="none-${type}-${index}">Pas d’abonnement</label>
+        </div>
+      </div>
+    `;
+    return section;
+  }
+
+  function refreshAll() {
+    const mainCount = parseInt(mainQuantityInput.value);
+    const adultCount = parseInt(adultInput.value);
+    const childCount = parseInt(childInput.value);
+
+    updateThemeCount(mainCount);
+    renderDatePickers(mainCount);
+    renderMobilitySections(adultCount, childCount);
+  }
+
+  refreshAll();
+
+  document.querySelectorAll(".quantity-control").forEach((control, index) => {
+    const minus = control.querySelector(".minus");
+    const plus = control.querySelector(".plus");
+    const input = control.querySelector(".quantity");
+
+    const min = parseInt(input.min);
+    const max = parseInt(input.max);
+
+    function updateButtons() {
+      const val = parseInt(input.value);
+      minus.disabled = val <= min;
+      plus.disabled = val >= max;
+    }
+
     updateButtons();
-    renderDatePickers(count);
-    updateThemeCount(count);
-  }
 
-  // Initialisation
-  const initialCount = parseInt(quantityInput.value);
-  refreshAll(initialCount);
+    minus.addEventListener("click", () => {
+      let val = parseInt(input.value);
+      if (val > min) {
+        input.value = val - 1;
+        updateButtons();
+        refreshAll();
+      }
+    });
 
-  minusBtn.addEventListener("click", () => {
-    let current = parseInt(quantityInput.value);
-    if (current > parseInt(quantityInput.min)) {
-      current -= 1;
-      quantityInput.value = current;
-      refreshAll(current);
-    }
-  });
-
-  plusBtn.addEventListener("click", () => {
-    let current = parseInt(quantityInput.value);
-    if (current < parseInt(quantityInput.max)) {
-      current += 1;
-      quantityInput.value = current;
-      refreshAll(current);
-    }
+    plus.addEventListener("click", () => {
+      let val = parseInt(input.value);
+      if (val < max) {
+        input.value = val + 1;
+        updateButtons();
+        refreshAll();
+      }
+    });
   });
 });

@@ -34,17 +34,17 @@ html {
 }
 
 /* bootstrap ↓ */
-.row + .row {
-  margin-top: 16px;
-}
+// .row + .row {
+//   margin-top: 16px;
+// }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(31, 195, 159, 0.15);
-  border: 1px solid rgb(96, 12, 221);
-}
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(31, 195, 159, 0.15);
+//   border: 1px solid rgb(96, 12, 221);
+// }
 
 main {
   display: flex;
@@ -80,4 +80,22 @@ img {
   .box-container {
     gap: 0.5rem;
   }
+}
+
+.l-space-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.l-space-column {
+  display: flex;
+
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.l-space-column-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }

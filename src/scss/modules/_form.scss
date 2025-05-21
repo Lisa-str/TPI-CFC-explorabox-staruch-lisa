@@ -17,3 +17,15 @@ form {
     }
   }
 }
+
+.form-check {
+  .form-check-input {
+    background-color: $color-secondary;
+    border: none;
+
+    &:checked {
+      background-color: $color-accent;
+      border: none;
+    }
+  }
+}

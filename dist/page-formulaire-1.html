@@ -76,20 +76,47 @@
 
 
     <main class="container">
-      <div class="container booking">
+      <div class="container booking l-space-column">
         <div class="row">
           <div class="col-12">
             <h1>Réservation</h1>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 col-sm-12">
-            <div class="steps">étapes</div>
+          <div class="col-md-3 col-sm-12 steps">
+            <div class="l-space-column">
+              <div class="l-space-row">
+                <div class="button step ongoing"><p>1</p></div>
+
+                <p>Escapade</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step"><p>2</p></div>
+
+                <p>Personnalisation</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step"><p>3</p></div>
+
+                <p>Informations personnelles</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step"><p>4</p></div>
+
+                <p>Récapitulatif</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step"><p>5</p></div>
+
+                <p>Finalisation</p>
+              </div>
+            </div>
+
             <div class="summary summary-mini">récap</div>
           </div>
           <div class="col-md-9 col-sm-12 booking-wrapper">
             <div class="row">
-              <div class="col-12">
+              <div class="col-12 booking-wrapper-title">
                 <h2>Escapade</h2>
                 <p>
                   Choisissez votre escapade, vos dates et le nombre de
@@ -98,48 +125,53 @@
               </div>
             </div>
             <div class="row big-booking">
-              <div class="row">
-                <div class="col-12">
+              <div class="col-12 big-booking-dates l-space-column">
+                <div class="row">
                   <h3 class="obligatory">Dates</h3>
                   <p>
                     Définissez le nombre de dates voulues jusqu’à 10 escapades.
                   </p>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-xl-5 col-md-7 col-sm-12">
-                  <div class="quantity-wrapper">
-                    <div class="quantity-control d-flex">
-  <i class="fa-solid fa-minus minus button"></i>
+                <div class="row">
+                  <div class="col-xl-5 col-md-7 col-sm-12">
+                    <div class="quantity-wrapper">
+                      <div class="quantity-control d-flex">
+  <button class="minus button">
+    <i class="fa-solid fa-minus"></i>
+  </button>
   <input type="number" class="quantity" min="1" max="10" value="1" readonly="">
-  <i class="fa-solid fa-plus plus button"></i>
+  <button class="plus button">
+    <i class="fa-solid fa-plus"></i>
+  </button>
 </div>
 
-                    <div id="dates-container"></div>
+                      <div id="dates-container"></div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-12">
+              <div class="col-12 big-booking-theme l-space-column">
                 <h3>Thématique</h3>
                 <p>
                   Choisissez une ou plusieurs thématiques selon vos envies. Pour
                   chaque date réservée, vous devez choisir une thématique. Merci
                   de répartir vos choix en fonction du nombre total d’escapades.
                 </p>
-              </div>
-              <div class="col-xl-5 col-md-7 col-sm-12 choice d-flex">
-                <p>Choisissez en :</p>
-                <strong class="obligatory" id="theme-count">1</strong>
-              </div>
-              <div class="row getaway-form">
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                  <div class="card-getaway">
+
+                <div class="col-xl-5 col-md-7 col-sm-12 choice d-flex">
+                  <p>Choisissez en :</p>
+                  <strong class="obligatory" id="theme-count">1</strong>
+                </div>
+
+                <div class="row getaway-form">
+                  <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="card-getaway">
   <div class="">
     <img src="/sensation-forte.981e86e8.png" alt="">
   </div>
   <div class="">
-    <h3>Sensations                    fortes</h3>
+    <h3>Sensations                      fortes</h3>
     <p></p>
   </div>
 
@@ -154,9 +186,9 @@
   </div>
 </div>
 
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                  <div class="card-getaway">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="card-getaway">
   <div class="">
     <img src="/urbaine.ad2765b4.jpg" alt="">
   </div>
@@ -165,7 +197,7 @@
     <p></p>
   </div>
 
-  <div class="price">dès                    700.-</div>
+  <div class="price">dès                      700.-</div>
 
   <div class="button-wrapper">
     <a class="button button-second" href="">En savoir plus</a>
@@ -176,18 +208,18 @@
   </div>
 </div>
 
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                  <div class="card-getaway">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="card-getaway">
   <div class="">
     <img src="/artisanat.609d4b05.jpg" alt="">
   </div>
   <div class="">
-    <h3>Trésors d&#039;artisanat</h3>
+    <h3>Trésors                      d&#039;artisanat</h3>
     <p></p>
   </div>
 
-  <div class="price">dès                    500.-</div>
+  <div class="price">dès 500.-</div>
 
   <div class="button-wrapper">
     <a class="button button-second" href="">En savoir plus</a>
@@ -198,18 +230,18 @@
   </div>
 </div>
 
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                  <div class="card-getaway">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="card-getaway">
   <div class="">
     <img src="/bien-etre.bd008f15.jpg" alt="">
   </div>
   <div class="">
-    <h3>Escapades bien-être</h3>
+    <h3>Escapades                      bien-être</h3>
     <p></p>
   </div>
 
-  <div class="price">dès                    700.-</div>
+  <div class="price">dès 700.-</div>
 
   <div class="button-wrapper">
     <a class="button button-second" href="">En savoir plus</a>
@@ -220,9 +252,9 @@
   </div>
 </div>
 
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                  <div class="card-getaway">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="card-getaway">
   <div class="">
     <img src="/famille.866c6378.jpg" alt="">
   </div>
@@ -231,7 +263,7 @@
     <p></p>
   </div>
 
-  <div class="price">dès                    1200.-</div>
+  <div class="price">dès                      1200.-</div>
 
   <div class="button-wrapper">
     <a class="button button-second" href="">En savoir plus</a>
@@ -242,6 +274,89 @@
   </div>
 </div>
 
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 big-booking-person l-space-column">
+                <h3 class="obligatory">Voyageurs</h3>
+                <div class="row">
+                  <div class="col-xl-5 col-md-7 col-sm-12">
+                    <p>Adulte</p>
+
+                    <div class="quantity-wrapper">
+                      <div class="quantity-control d-flex">
+  <button class="minus button">
+    <i class="fa-solid fa-minus"></i>
+  </button>
+  <input type="number" class="quantity" min="1" max="6" value="1" readonly="">
+  <button class="plus button">
+    <i class="fa-solid fa-plus"></i>
+  </button>
+</div>
+
+                      <div id="dates-container"></div>
+                    </div>
+                  </div>
+                  <div class="col-xl-5 col-md-7 col-sm-12">
+                    <p>Enfant (≤12ans)</p>
+                    <div class="quantity-wrapper">
+                      <div class="quantity-control d-flex">
+  <button class="minus button">
+    <i class="fa-solid fa-minus"></i>
+  </button>
+  <input type="number" class="quantity" min="0" max="6" value="0" readonly="">
+  <button class="plus button">
+    <i class="fa-solid fa-plus"></i>
+  </button>
+</div>
+
+                      <div id="dates-container"></div>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="obligatory">Mobilité</h4>
+                <p>
+                  Nous privilégions la mobilité douce et utilisons les
+                  transports publics suisses (trains, bus). Votre abonnement
+                  permet d’adapter le trajet et le tarif.
+                </p>
+                <div class="l-space-column-mini">
+                  <h5 class="obligatory">Personne 1 :</h5>
+                  <div class="l-space-column-mini">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Abonnement demi-tarif
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Abonnement général (AG)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                      <label class="form-check-label" for="flexRadioDefault3">
+                        Swiss Travel Pass
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                      <label class="form-check-label" for="flexRadioDefault4">
+                        Pas d’abonnement
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="button-form-wrapper">
+                <div class="buttons-next-to-each-other">
+                  <div class="next">
+                    <a class="button" href="">Suivant</a>
+
+                  </div>
                 </div>
               </div>
             </div>

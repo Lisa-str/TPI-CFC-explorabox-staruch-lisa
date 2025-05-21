@@ -21,20 +21,47 @@
     <include src="include-header.html"></include>
 
     <main class="container">
-      <div class="container booking">
+      <div class="container booking l-space-column">
         <div class="row">
           <div class="col-12">
             <h1>Réservation</h1>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 col-sm-12">
-            <div class="steps">étapes</div>
+          <div class="col-md-3 col-sm-12 steps">
+            <div class="l-space-column">
+              <div class="l-space-row">
+                <div class="button step ongoing"><p>1</p></div>
+
+                <p>Escapade</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step"><p>2</p></div>
+
+                <p>Personnalisation</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step"><p>3</p></div>
+
+                <p>Informations personnelles</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step"><p>4</p></div>
+
+                <p>Récapitulatif</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step"><p>5</p></div>
+
+                <p>Finalisation</p>
+              </div>
+            </div>
+
             <div class="summary summary-mini">récap</div>
           </div>
           <div class="col-md-9 col-sm-12 booking-wrapper">
             <div class="row">
-              <div class="col-12">
+              <div class="col-12 booking-wrapper-title">
                 <h2>Escapade</h2>
                 <p>
                   Choisissez votre escapade, vos dates et le nombre de
@@ -43,78 +70,173 @@
               </div>
             </div>
             <div class="row big-booking">
-              <div class="row">
-                <div class="col-12">
+              <div class="col-12 big-booking-dates l-space-column">
+                <div class="row">
                   <h3 class="obligatory">Dates</h3>
                   <p>
                     Définissez le nombre de dates voulues jusqu’à 10 escapades.
                   </p>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-xl-5 col-md-7 col-sm-12">
-                  <div class="quantity-wrapper">
-                    <include src="include-formulaire-quantity.html"
-                      >{ "quantitycontrolmin": "1", "quantitycontrolmax": "10",
-                      "quantitycontrolvalue": "1" }</include
-                    >
-                    <div id="dates-container"></div>
+                <div class="row">
+                  <div class="col-xl-5 col-md-7 col-sm-12">
+                    <div class="quantity-wrapper">
+                      <include src="include-formulaire-quantity.html"
+                        >{ "quantitycontrolmin": "1", "quantitycontrolmax":
+                        "10", "quantitycontrolvalue": "1" }</include
+                      >
+                      <div id="dates-container"></div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-12">
+              <div class="col-12 big-booking-theme l-space-column">
                 <h3>Thématique</h3>
                 <p>
                   Choisissez une ou plusieurs thématiques selon vos envies. Pour
                   chaque date réservée, vous devez choisir une thématique. Merci
                   de répartir vos choix en fonction du nombre total d’escapades.
                 </p>
+
+                <div class="col-xl-5 col-md-7 col-sm-12 choice d-flex">
+                  <p>Choisissez en :</p>
+                  <strong class="obligatory" id="theme-count">1</strong>
+                </div>
+
+                <div class="row getaway-form">
+                  <div class="col-sm-12 col-md-6 col-xl-4">
+                    <include src="include-card.html">
+                      { "cardgetawayimg": "img/sensation-forte.png",
+                      "cardgetawaylink": "", "cardgetawaytitle": "Sensations
+                      fortes", "cardgetawaydescription": "", "cardgetawayprice":
+                      "dès 800.-", "cardgetawaybutton": "+" }</include
+                    >
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-xl-4">
+                    <include src="include-card.html">
+                      { "cardgetawayimg": "img/urbaine.jpg", "cardgetawaylink":
+                      "", "cardgetawaytitle": "Aventures urbaines",
+                      "cardgetawaydescription": "", "cardgetawayprice": "dès
+                      700.-", "cardgetawaybutton": "+" }</include
+                    >
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-xl-4">
+                    <include src="include-card.html">
+                      { "cardgetawayimg": "img/artisanat.jpg",
+                      "cardgetawaylink": "", "cardgetawaytitle": "Trésors
+                      d'artisanat", "cardgetawaydescription": "",
+                      "cardgetawayprice": "dès 500.-", "cardgetawaybutton": "+"
+                      }</include
+                    >
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-xl-4">
+                    <include src="include-card.html">
+                      { "cardgetawayimg": "img/bien-etre.jpg",
+                      "cardgetawaylink": "", "cardgetawaytitle": "Escapades
+                      bien-être", "cardgetawaydescription": "",
+                      "cardgetawayprice": "dès 700.-", "cardgetawaybutton": "+"
+                      }</include
+                    >
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-xl-4">
+                    <include src="include-card.html">
+                      { "cardgetawayimg": "img/famille.jpg","cardgetawaylink":
+                      "", "cardgetawaytitle": "Moments en familles",
+                      "cardgetawaydescription": "", "cardgetawayprice": "dès
+                      1200.-", "cardgetawaybutton": "+" }</include
+                    >
+                  </div>
+                </div>
               </div>
-              <div class="col-xl-5 col-md-7 col-sm-12 choice d-flex">
-                <p>Choisissez en :</p>
-                <strong class="obligatory" id="theme-count">1</strong>
+
+              <div class="col-12 big-booking-person l-space-column">
+                <h3 class="obligatory">Voyageurs</h3>
+                <div class="row">
+                  <div class="col-xl-5 col-md-7 col-sm-12">
+                    <p>Adulte</p>
+
+                    <div class="quantity-wrapper">
+                      <include src="include-formulaire-quantity.html"
+                        >{ "quantitycontrolmin": "1", "quantitycontrolmax": "6",
+                        "quantitycontrolvalue": "1" }</include
+                      >
+                      <div id="dates-container"></div>
+                    </div>
+                  </div>
+                  <div class="col-xl-5 col-md-7 col-sm-12">
+                    <p>Enfant (≤12ans)</p>
+                    <div class="quantity-wrapper">
+                      <include src="include-formulaire-quantity.html"
+                        >{ "quantitycontrolmin": "0", "quantitycontrolmax": "6",
+                        "quantitycontrolvalue": "0" }</include
+                      >
+                      <div id="dates-container"></div>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="obligatory">Mobilité</h4>
+                <p>
+                  Nous privilégions la mobilité douce et utilisons les
+                  transports publics suisses (trains, bus). Votre abonnement
+                  permet d’adapter le trajet et le tarif.
+                </p>
+                <div class="l-space-column-mini">
+                  <h5 class="obligatory">Personne 1 :</h5>
+                  <div class="l-space-column-mini">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Abonnement demi-tarif
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Abonnement général (AG)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault3"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault3">
+                        Swiss Travel Pass
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault4"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault4">
+                        Pas d’abonnement
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="row getaway-form">
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                  <include src="include-card.html">
-                    { "cardgetawayimg": "img/sensation-forte.png",
-                    "cardgetawaylink": "", "cardgetawaytitle": "Sensations
-                    fortes", "cardgetawaydescription": "", "cardgetawayprice":
-                    "dès 800.-", "cardgetawaybutton": "+" }</include
-                  >
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                  <include src="include-card.html">
-                    { "cardgetawayimg": "img/urbaine.jpg", "cardgetawaylink":
-                    "", "cardgetawaytitle": "Aventures urbaines",
-                    "cardgetawaydescription": "", "cardgetawayprice": "dès
-                    700.-", "cardgetawaybutton": "+" }</include
-                  >
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                  <include src="include-card.html">
-                    { "cardgetawayimg": "img/artisanat.jpg", "cardgetawaylink":
-                    "", "cardgetawaytitle": "Trésors d'artisanat",
-                    "cardgetawaydescription": "", "cardgetawayprice": "dès
-                    500.-", "cardgetawaybutton": "+" }</include
-                  >
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                  <include src="include-card.html">
-                    { "cardgetawayimg": "img/bien-etre.jpg", "cardgetawaylink":
-                    "", "cardgetawaytitle": "Escapades bien-être",
-                    "cardgetawaydescription": "", "cardgetawayprice": "dès
-                    700.-", "cardgetawaybutton": "+" }</include
-                  >
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4">
-                  <include src="include-card.html">
-                    { "cardgetawayimg": "img/famille.jpg","cardgetawaylink": "",
-                    "cardgetawaytitle": "Moments en familles",
-                    "cardgetawaydescription": "", "cardgetawayprice": "dès
-                    1200.-", "cardgetawaybutton": "+" }</include
-                  >
+              <div class="button-form-wrapper">
+                <div class="buttons-next-to-each-other">
+                  <div class="next">
+                    <include src="include-button.html"
+                      >{ "buttontext": "Suivant", "buttonlink": "" }</include
+                    >
+                  </div>
                 </div>
               </div>
             </div>
