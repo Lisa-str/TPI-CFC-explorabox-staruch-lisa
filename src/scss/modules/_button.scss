@@ -7,7 +7,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  width: fit-content !important;
+  width: fit-content;
 
   display: flex;
   padding: 1rem 1rem;
@@ -15,22 +15,14 @@
   align-items: center;
   gap: 0.625rem;
 
-  &:hover {
-    background-color: $color-accent-hover;
-    color: $color-secondary-hover;
-
-    i {
-      color: $color-dark;
-    }
-  }
-
   a {
     color: $color-light;
     line-height: normal;
+  }
 
-    &:hover {
-      color: $color-secondary-hover;
-    }
+  &:hover {
+    background-color: $color-accent-hover;
+    color: $color-light;
   }
 }
 
@@ -43,6 +35,29 @@
 .cta-download {
   color: $color-accent;
   font-size: clamp(1.5rem, 2.5vw, 1.5rem);
+}
+
+.button.cta {
+  display: flex;
+  padding: 2rem 2rem !important;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.625rem;
+  background-color: $color-accent;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+
+  p,
+  i {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: $color-light;
+  }
+
+  &:hover {
+    background-color: $color-accent-hover;
+  }
 }
 
 .button-wrapper {

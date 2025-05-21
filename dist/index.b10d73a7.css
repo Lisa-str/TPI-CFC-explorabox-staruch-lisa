@@ -13702,20 +13702,11 @@ img {
   justify-content: center;
   align-items: center;
   gap: .625rem;
+  width: fit-content;
   padding: 1rem;
   line-height: 1;
   transition: all .3s ease-in-out;
   display: flex;
-  width: fit-content !important;
-}
-
-.button:hover {
-  color: #e69b6e;
-  background-color: #af4506;
-}
-
-.button:hover i {
-  color: #192322;
 }
 
 .button a {
@@ -13723,8 +13714,9 @@ img {
   line-height: normal;
 }
 
-.button a:hover {
-  color: #e69b6e;
+.button:hover {
+  color: #fffdfb;
+  background-color: #af4506;
 }
 
 .buttons-next-to-each-other {
@@ -13736,6 +13728,27 @@ img {
 .cta-download {
   color: #ee6d17;
   font-size: clamp(1.5rem, 2.5vw, 1.5rem);
+}
+
+.button.cta {
+  cursor: pointer;
+  background-color: #ee6d17;
+  border-radius: .625rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: all .3s ease-in-out;
+  display: flex;
+  padding: 2rem !important;
+}
+
+.button.cta p, .button.cta i {
+  color: #fffdfb;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.button.cta:hover {
+  background-color: #af4506;
 }
 
 .button-wrapper {
@@ -13814,26 +13827,6 @@ img {
 
 .box-container .box-icon .fa-solid {
   font-size: clamp(3rem, 5vw, 3rem);
-}
-
-.box-cta {
-  color: #fffdfb;
-  cursor: pointer;
-  background-color: #ee6d17;
-  border-radius: .625rem;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  padding: 2rem !important;
-}
-
-.box-cta .fa-solid {
-  font-size: clamp(2rem, 5vw, 2rem);
-}
-
-.box-cta:hover {
-  background-color: #af4506;
-  transition: all .3s ease-in-out;
 }
 
 .box-numbers {
@@ -14598,5 +14591,14 @@ form input {
   color: #fffdfb;
   font-family: Poppins-Regular, Arial, sans-serif;
   font-size: clamp(.8rem, 1.5vw, 1rem) !important;
+}
+
+@media screen and (width >= 1000px) {
+  .footer form {
+    flex-direction: row;
+    align-content: stretch;
+    gap: .6rem;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

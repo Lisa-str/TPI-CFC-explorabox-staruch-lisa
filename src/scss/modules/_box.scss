@@ -42,26 +42,6 @@
   }
 }
 
-.box-cta {
-  display: flex;
-  padding: 2rem 2rem !important;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 0.625rem;
-  background-color: $color-accent;
-  color: $color-light;
-  cursor: pointer;
-
-  .fa-solid {
-    font-size: clamp(2rem, 5vw, 2rem);
-  }
-}
-
-.box-cta:hover {
-  background-color: $color-accent-hover;
-  transition: all 0.3s ease-in-out;
-}
-
 .box-numbers {
   display: flex;
   flex-direction: column;
