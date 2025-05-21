@@ -20,7 +20,7 @@
   <body>
     <include src="include-header.html"></include>
 
-    <main>
+    <main class="container">
       <div class="container hero">
         <div class="row">
           <div class="col-12">
@@ -65,10 +65,11 @@
                   <img src="img/hero-bento-suprise.png" alt="" />
                 </div>
 
-<include src="include-box-cta.html"
-              >{ "boxctatext": "Réserver !",
-              "boxctaicon": "fa-arrow-right" }</include
-            >
+                <include src="include-box-cta.html"
+                  >{ "boxctatext": "Réserver !", "boxctaicon": "fa-arrow-right"
+                  }</include
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -76,7 +77,7 @@
 
       <div class="container getaway">
         <div class="row">
-          <div class="col-12 position-relative align-items-center">
+          <div class="position-relative align-items-center">
             <div class="row">
               <div class="col-10"><h2>Nos escapades</h2></div>
               <div class="col-2 d-flex align-items-center justify-content-end">
@@ -115,61 +116,70 @@
                 <div class="swiper-slide">
                   <include src="include-card.html">
                     { "cardgetawayimg": "img/sensation-forte.png",
-                    "cardgetawaytitle": "Sensations fortes",
-                    "cardgetawaydescription": "Préparez-vous à repousser vos
-                    limites. Entre ciel, terre et eau, ces expériences font
-                    battre le cœur plus fort et réveillent l’instinct
-                    d’aventure. Adrénaline garantie, sans jamais perdre le
-                    contrôle.", "cardgetawayprice": "dès 800.-" }</include
-                  >
-                </div>
-                <div class="swiper-slide">
-                  <include src="include-card.html">
-                    { "cardgetawayimg": "img/urbaine.jpg", "cardgetawaytitle":
-                    "Aventures urbaines", "cardgetawaydescription": "Derrière
-                    les façades familières, des univers insoupçonnés vous
-                    attendent. Parcourez les villes autrement, découvrez des
-                    lieux tenus secrets et plongez dans des ambiances qui ne se
-                    dévoilent qu’aux plus curieux·ses.", "cardgetawayprice":
-                    "dès 700.-" }</include
-                  >
-                </div>
-                <div class="swiper-slide">
-                  <include src="include-card.html">
-                    { "cardgetawayimg": "img/artisanat.jpg", "cardgetawaytitle":
-                    "Trésors d'artisanat", "cardgetawaydescription": "Passez de
-                    l’autre côté du décor et mettez les mains à la pâte.
-                    Créatif·ve, curieux·se ou simplement gourmand·e, vous
-                    explorez les coulisses de savoir-faire uniques, guidé·e par
-                    des passionné·e·s. Une immersion où l’on touche, transforme,
-                    assemble… et parfois déguste. ", "cardgetawayprice": "dès
-                    500.-" }</include
-                  >
-                </div>
-                <div class="swiper-slide">
-                  <include src="include-card.html">
-                    { "cardgetawayimg": "img/bien-etre.jpg", "cardgetawaytitle":
-                    "Escapades bien-être", "cardgetawaydescription":
-                    "Offrez-vous une parenthèse aussi agréable qu’inattendue.
-                    Qu’il s’agisse de reconnecter avec votre corps ou d’éveiller
-                    vos sens, ces escapades vous recentrent, vous apaisent et
-                    réenchantent le quotidien.", "cardgetawayprice": "dès 700.-"
+                    "cardgetawaylink": "", "cardgetawaytitle": "Sensations
+                    fortes", "cardgetawaydescription": "Préparez-vous à
+                    repousser vos limites. Entre ciel, terre et eau, ces
+                    expériences font battre le cœur plus fort et réveillent
+                    l’instinct d’aventure. Adrénaline garantie, sans jamais
+                    perdre le contrôle.", "cardgetawayprice": "dès 800.-"
                     }</include
                   >
                 </div>
                 <div class="swiper-slide">
                   <include src="include-card.html">
-                    { "cardgetawayimg": "img/famille.jpg", "cardgetawaytitle":
-                    "Moments en familles", "cardgetawaydescription": "Des
-                    moments pensés pour petits et grands, où l’on partage le
-                    rire, l’étonnement et l’aventure. Ensemble, vivez des
-                    expériences qui soudent, amusent et laissent des souvenirs
-                    pour longtemps. ", "cardgetawayprice": "dès 1200.-"
-                    }</include
+                    { "cardgetawayimg": "img/urbaine.jpg", "cardgetawaylink":
+                    "", "cardgetawaytitle": "Aventures urbaines",
+                    "cardgetawaydescription": "Derrière les façades familières,
+                    des univers insoupçonnés vous attendent. Parcourez les
+                    villes autrement, découvrez des lieux tenus secrets et
+                    plongez dans des ambiances qui ne se dévoilent qu’aux plus
+                    curieux·ses.", "cardgetawayprice": "dès 700.-" }</include
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <include src="include-card.html">
+                    { "cardgetawayimg": "img/artisanat.jpg", "cardgetawaylink":
+                    "", "cardgetawaytitle": "Trésors d'artisanat",
+                    "cardgetawaydescription": "Passez de l’autre côté du décor
+                    et mettez les mains à la pâte. Créatif·ve, curieux·se ou
+                    simplement gourmand·e, vous explorez les coulisses de
+                    savoir-faire uniques, guidé·e par des passionné·e·s. Une
+                    immersion où l’on touche, transforme, assemble… et parfois
+                    déguste. ", "cardgetawayprice": "dès 500.-" }</include
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <include src="include-card.html">
+                    { "cardgetawayimg": "img/bien-etre.jpg", "cardgetawaylink":
+                    "", "cardgetawaytitle": "Escapades bien-être",
+                    "cardgetawaydescription": "Offrez-vous une parenthèse aussi
+                    agréable qu’inattendue. Qu’il s’agisse de reconnecter avec
+                    votre corps ou d’éveiller vos sens, ces escapades vous
+                    recentrent, vous apaisent et réenchantent le quotidien.",
+                    "cardgetawayprice": "dès 700.-" }</include
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <include src="include-card.html">
+                    { "cardgetawayimg": "img/famille.jpg", "cardgetawaylink":
+                    "", "cardgetawaytitle": "Moments en familles",
+                    "cardgetawaydescription": "Des moments pensés pour petits et
+                    grands, où l’on partage le rire, l’étonnement et l’aventure.
+                    Ensemble, vivez des expériences qui soudent, amusent et
+                    laissent des souvenirs pour longtemps. ",
+                    "cardgetawayprice": "dès 1200.-" }</include
                   >
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 justify-content-center d-flex">
+            <include src="include-button.html"
+              >{ "buttontext": "Voir toutes les escapades", "buttonlink":
+              "page-escapade.html" }</include
+            >
           </div>
         </div>
       </div>
@@ -182,7 +192,7 @@
       <div class="container about">
         <div class="row">
           <div class="col-12">
-            <h2>A propos d’ExploraBox</h2>
+            <h2>À propos d’ExploraBox</h2>
           </div>
         </div>
         <div class="row">

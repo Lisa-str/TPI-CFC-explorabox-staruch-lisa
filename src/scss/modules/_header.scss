@@ -5,17 +5,16 @@
   position: sticky;
   top: 0;
   background-color: $color-light;
-  padding: 1.25rem 0;
-  border-radius: 10px;
+  padding: 1rem 0;
 
   .col-12 {
-    gap: 1.25rem;
+    gap: 1rem;
   }
 
   .box {
     display: flex;
     align-items: center;
-    padding: 1.2rem 2rem;
+    padding: 1rem 1.5rem;
     gap: 3rem;
     height: 100%;
   }
@@ -38,7 +37,7 @@
 
     a {
       font-family: $font-regular;
-      font-size: clamp(0.7rem, 2.5vw, 1.2rem) !important;
+      font-size: clamp(0.7rem, 2.5vw, 1rem) !important;
       line-height: 1.4375rem;
       color: $color-light;
       text-decoration: none;
@@ -62,7 +61,7 @@
     display: none;
     cursor: pointer;
     align-items: center;
-
+    height: 100%;
     i {
       font-size: 2rem;
       color: $color-light;
@@ -117,9 +116,14 @@
     text-align: end;
     align-items: flex-end;
 
+    li a {
+      font-size: clamp(0.7rem, 5vw, 1rem);
+      color: $color-dark;
+    }
+
     a {
       font-family: $font-regular;
-      font-size: 1.8rem !important;
+      font-size: clamp(1rem, 5vw, 1.8rem);
       color: $color-light;
       text-decoration: none;
       transition: color 0.3s ease-in-out;
@@ -211,5 +215,9 @@
 
   .header-primary-navigation {
     width: 50% !important;
+  }
+
+  .menu-mobile {
+    padding: 1rem;
   }
 }

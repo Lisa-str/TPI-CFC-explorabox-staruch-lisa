@@ -3,21 +3,20 @@ import { Navigation } from "swiper/modules";
 
 const swiper = new Swiper(".swiper-getaway", {
   modules: [Navigation],
-  slidesPerView: 1,
+  slidesPerView: 2,
   spaceBetween: 16,
   navigation: {
     nextEl: ".getaway-button-next",
     prevEl: ".getaway-button-prev",
   },
+  observer: true,
+  observeParents: true,
   breakpoints: {
-    768: {
-      slidesPerView: 1,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
+    1200: { slidesPerView: 3 },
   },
 });
+
+console.log(window.innerWidth);
 
 const testimonialSwiper = new Swiper(".swiper-testimonial", {
   modules: [Navigation],

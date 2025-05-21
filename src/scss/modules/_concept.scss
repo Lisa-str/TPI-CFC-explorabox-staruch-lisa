@@ -5,6 +5,10 @@
   position: relative;
   overflow: hidden;
 
+  .box-icon {
+    height: 100%;
+  }
+
   .decoration {
     position: relative;
   }
@@ -53,6 +57,15 @@
 }
 
 .concept-how-wrapper {
-  gap: 1rem 0;
   display: flex;
+  flex-wrap: wrap;
+
+  .box {
+    margin: 1rem 0.5rem;
+  }
+
+  .box-explanation-number {
+    font-size: clamp(2rem, 5vw, 2.3rem);
+    font-weight: bold;
+  }
 }

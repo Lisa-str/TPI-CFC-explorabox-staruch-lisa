@@ -592,21 +592,21 @@ const swiper = new (0, _swiperDefault.default)(".swiper-getaway", {
     modules: [
         (0, _modules.Navigation)
     ],
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 16,
     navigation: {
         nextEl: ".getaway-button-next",
         prevEl: ".getaway-button-prev"
     },
+    observer: true,
+    observeParents: true,
     breakpoints: {
-        768: {
-            slidesPerView: 1
-        },
-        1024: {
+        1200: {
             slidesPerView: 3
         }
     }
 });
+console.log(window.innerWidth);
 const testimonialSwiper = new (0, _swiperDefault.default)(".swiper-testimonial", {
     modules: [
         (0, _modules.Navigation)

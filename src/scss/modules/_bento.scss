@@ -55,9 +55,6 @@
       }
     }
   }
-  .bento-two {
-    gap: 0.5rem;
-  }
 }
 
 @media (max-width: 900px) {
@@ -73,11 +70,6 @@
 @media (max-width: 1300px) {
   .bento {
     height: 100vh;
-    gap: 0.5rem;
-
-    .side-bento {
-      gap: 0.5rem;
-    }
   }
 
   .mini-bento {
@@ -90,7 +82,6 @@
   }
 
   .bento-two {
-    gap: 0.5rem !important;
     flex-direction: column;
   }
 }

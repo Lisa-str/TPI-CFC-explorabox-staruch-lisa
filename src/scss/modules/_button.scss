@@ -10,7 +10,7 @@
   width: fit-content !important;
 
   display: flex;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
@@ -32,6 +32,17 @@
       color: $color-secondary-hover;
     }
   }
+}
+
+.buttons-next-to-each-other {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.cta-download {
+  color: $color-accent;
+  font-size: clamp(1.5rem, 2.5vw, 1.5rem);
 }
 
 .button-wrapper {
