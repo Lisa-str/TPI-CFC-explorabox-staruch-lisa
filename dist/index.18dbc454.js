@@ -588,7 +588,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _swiper = require("swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 var _modules = require("swiper/modules");
-const swiper = new (0, _swiperDefault.default)(".swiper-getaway", {
+/* SWIPER CAROUSEL */ const swiper = new (0, _swiperDefault.default)(".swiper-getaway", {
     modules: [
         (0, _modules.Navigation)
     ],
@@ -618,7 +618,7 @@ const testimonialSwiper = new (0, _swiperDefault.default)(".swiper-testimonial",
         prevEl: ".testimonial-button-prev"
     }
 });
-const openMenu = document.getElementById("open-menu");
+/* BURGER MENU */ const openMenu = document.getElementById("open-menu");
 const closeMenu = document.getElementById("close-menu");
 const mobileMenu = document.getElementById("mobile-menu");
 openMenu.addEventListener("click", ()=>{
@@ -642,6 +642,31 @@ overlay.addEventListener("click", ()=>{
     mobileMenu.classList.remove("active");
     overlay.classList.remove("active");
     document.documentElement.classList.remove("no-scroll");
+});
+/* QUANTITY CONTROL (FORMULAIRE) */ const minusBtn = document.querySelector(".minus");
+const plusBtn = document.querySelector(".plus");
+const quantityInput = document.querySelector(".quantity");
+function updateButtons() {
+    const current = parseInt(quantityInput.value);
+    const min = parseInt(quantityInput.min);
+    const max = parseInt(quantityInput.max);
+    minusBtn.disabled = current <= min;
+    plusBtn.disabled = current >= max;
+}
+updateButtons();
+minusBtn.addEventListener("click", ()=>{
+    let current = parseInt(quantityInput.value);
+    if (current > parseInt(quantityInput.min)) {
+        quantityInput.value = current - 1;
+        updateButtons();
+    }
+});
+plusBtn.addEventListener("click", ()=>{
+    let current = parseInt(quantityInput.value);
+    if (current < parseInt(quantityInput.max)) {
+        quantityInput.value = current + 1;
+        updateButtons();
+    }
 });
 
 },{"swiper":"iM6UL","swiper/modules":"9ktz6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iM6UL":[function(require,module,exports) {

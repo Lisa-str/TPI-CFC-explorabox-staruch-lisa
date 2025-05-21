@@ -34,17 +34,17 @@ html {
 }
 
 /* bootstrap ↓ */
-// .row + .row {
-//   margin-top: 16px;
-// }
+.row + .row {
+  margin-top: 16px;
+}
 
-// .row > .col,
-// .row > [class^="col-"] {
-//   padding-top: 12px;
-//   padding-bottom: 12px;
-//   background-color: rgba(31, 195, 159, 0.15);
-//   border: 1px solid rgb(96, 12, 221);
-// }
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(31, 195, 159, 0.15);
+  border: 1px solid rgb(96, 12, 221);
+}
 
 main {
   display: flex;

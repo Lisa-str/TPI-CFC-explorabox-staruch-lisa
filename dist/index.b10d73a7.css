@@ -13613,6 +13613,17 @@ html {
   transition: all .3s ease-in-out;
 }
 
+.row + .row {
+  margin-top: 16px;
+}
+
+.row > .col, .row > [class^="col-"] {
+  background-color: #1fc39f26;
+  border: 1px solid #600cdd;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 main {
   flex-direction: column;
   display: flex;
@@ -14600,5 +14611,90 @@ form input {
     gap: .6rem;
     display: flex;
   }
+}
+
+.booking h2, .booking .h2 {
+  text-align: start;
+  padding: .5rem 0;
+}
+
+.booking .obligatory:after {
+  content: "*";
+  color: #ee6d17;
+  margin-left: .2rem;
+  font-size: 1.2rem;
+}
+
+.quantity-wrapper {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+.quantity-control {
+  gap: .5rem;
+}
+
+.quantity-control .quantity {
+  text-align: center;
+  background: none;
+  border: none;
+  font-family: Poppins-SemiBold, Arial, sans-serif;
+  font-size: clamp(1.5rem, 2vw, 1.7rem);
+  font-style: normal;
+  line-height: 1.8125rem;
+}
+
+.quantity-control .minus, .quantity-control .plus {
+  opacity: 1;
+  cursor: pointer;
+  border: none;
+  align-items: center;
+  padding: .8rem;
+  font-size: clamp(.8rem, 2vw, 1rem);
+  display: flex;
+}
+
+.quantity-control .minus:disabled, .quantity-control .plus:disabled {
+  color: #192322;
+  cursor: not-allowed;
+  background-color: #fbe1d0;
+}
+
+.date-picker {
+  position: relative;
+}
+
+.date-picker .date {
+  color: #050707;
+  appearance: none;
+  z-index: 2;
+  background-color: #fbe1d0;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1rem 2.5rem 1rem .8rem;
+  position: relative;
+}
+
+.date-picker .date::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.date-picker .calendar-icon {
+  pointer-events: none;
+  color: #ee6d17;
+  z-index: 3;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */
