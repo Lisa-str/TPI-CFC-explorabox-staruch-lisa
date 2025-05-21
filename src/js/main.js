@@ -63,11 +63,14 @@ overlay.addEventListener("click", () => {
   document.documentElement.classList.remove("no-scroll");
 });
 
+/* FORMULAIRE PAGE 1 */
+
 document.addEventListener("DOMContentLoaded", () => {
   const minusBtn = document.querySelector(".minus");
   const plusBtn = document.querySelector(".plus");
   const quantityInput = document.querySelector(".quantity");
   const datesContainer = document.getElementById("dates-container");
+  const themeCount = document.getElementById("theme-count");
 
   function updateButtons() {
     const current = parseInt(quantityInput.value);
@@ -101,24 +104,35 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  updateButtons();
-  renderDatePickers(parseInt(quantityInput.value));
+  function updateThemeCount(count) {
+    themeCount.textContent = count;
+  }
+
+  function refreshAll(count) {
+    updateButtons();
+    renderDatePickers(count);
+    updateThemeCount(count);
+  }
+
+  // Initialisation
+  const initialCount = parseInt(quantityInput.value);
+  refreshAll(initialCount);
 
   minusBtn.addEventListener("click", () => {
     let current = parseInt(quantityInput.value);
     if (current > parseInt(quantityInput.min)) {
-      quantityInput.value = current - 1;
-      updateButtons();
-      renderDatePickers(current - 1);
+      current -= 1;
+      quantityInput.value = current;
+      refreshAll(current);
     }
   });
 
   plusBtn.addEventListener("click", () => {
     let current = parseInt(quantityInput.value);
     if (current < parseInt(quantityInput.max)) {
-      quantityInput.value = current + 1;
-      updateButtons();
-      renderDatePickers(current + 1);
+      current += 1;
+      quantityInput.value = current;
+      refreshAll(current);
     }
   });
 });

@@ -42,7 +42,7 @@
                 </p>
               </div>
             </div>
-            <div class="row">
+            <div class="row big-booking">
               <div class="row">
                 <div class="col-12">
                   <h3 class="obligatory">Dates</h3>
@@ -58,24 +58,63 @@
                       >{ "quantitycontrolmin": "1", "quantitycontrolmax": "10",
                       "quantitycontrolvalue": "1" }</include
                     >
+                    <div id="dates-container"></div>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xl-5 col-md-7 col-sm-12">
-                  <div id="dates-container"></div>
 
-                  <!-- <div class="date-picker">
-                    <input
-                      type="date"
-                      class="date"
-                      name="trip-start"
-                      value="2025-01-01"
-                      min="2025-01-01"
-                      max="2100-12-31"
-                    />
-                    <i class="fa-regular fa-calendar calendar-icon"></i>
-                  </div> -->
+              <div class="col-12">
+                <h3>Thématique</h3>
+                <p>
+                  Choisissez une ou plusieurs thématiques selon vos envies. Pour
+                  chaque date réservée, vous devez choisir une thématique. Merci
+                  de répartir vos choix en fonction du nombre total d’escapades.
+                </p>
+              </div>
+              <div class="col-xl-5 col-md-7 col-sm-12 choice d-flex">
+                <p>Choisissez en :</p>
+                <strong class="obligatory" id="theme-count">1</strong>
+              </div>
+              <div class="row getaway-form">
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                  <include src="include-card.html">
+                    { "cardgetawayimg": "img/sensation-forte.png",
+                    "cardgetawaylink": "", "cardgetawaytitle": "Sensations
+                    fortes", "cardgetawaydescription": "", "cardgetawayprice":
+                    "dès 800.-", "cardgetawaybutton": "+" }</include
+                  >
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                  <include src="include-card.html">
+                    { "cardgetawayimg": "img/urbaine.jpg", "cardgetawaylink":
+                    "", "cardgetawaytitle": "Aventures urbaines",
+                    "cardgetawaydescription": "", "cardgetawayprice": "dès
+                    700.-", "cardgetawaybutton": "+" }</include
+                  >
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                  <include src="include-card.html">
+                    { "cardgetawayimg": "img/artisanat.jpg", "cardgetawaylink":
+                    "", "cardgetawaytitle": "Trésors d'artisanat",
+                    "cardgetawaydescription": "", "cardgetawayprice": "dès
+                    500.-", "cardgetawaybutton": "+" }</include
+                  >
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                  <include src="include-card.html">
+                    { "cardgetawayimg": "img/bien-etre.jpg", "cardgetawaylink":
+                    "", "cardgetawaytitle": "Escapades bien-être",
+                    "cardgetawaydescription": "", "cardgetawayprice": "dès
+                    700.-", "cardgetawaybutton": "+" }</include
+                  >
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                  <include src="include-card.html">
+                    { "cardgetawayimg": "img/famille.jpg","cardgetawaylink": "",
+                    "cardgetawaytitle": "Moments en familles",
+                    "cardgetawaydescription": "", "cardgetawayprice": "dès
+                    1200.-", "cardgetawaybutton": "+" }</include
+                  >
                 </div>
               </div>
             </div>

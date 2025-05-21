@@ -18,8 +18,9 @@
 
 .quantity-wrapper {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+
+  gap: 3rem;
 }
 
 .quantity-control {
@@ -86,7 +87,7 @@
     transform: translateY(-50%);
     pointer-events: none;
     color: $color-accent;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
     z-index: 3;
   }
 }
@@ -95,6 +96,17 @@
   .form-label {
     margin-bottom: 0.5rem;
     display: block;
-    font-weight: bold;
+    font-family: $font-medium;
   }
+}
+
+.choice {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#theme-count {
+  font-family: $font-medium;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  padding-bottom: 0.1rem;
 }

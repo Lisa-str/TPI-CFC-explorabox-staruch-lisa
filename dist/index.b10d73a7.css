@@ -14013,6 +14013,14 @@ form input {
   display: flex;
 }
 
+.getaway-form .button-wrapper .button {
+  width: 30%;
+}
+
+.getaway-form .button-wrapper .button-second {
+  width: 70%;
+}
+
 .bento {
   gap: 1rem;
 }
@@ -14626,8 +14634,8 @@ form input {
 }
 
 .quantity-wrapper {
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  gap: 3rem;
   display: flex;
 }
 
@@ -14691,7 +14699,7 @@ form input {
   pointer-events: none;
   color: #ee6d17;
   z-index: 3;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.3rem);
   position: absolute;
   top: 50%;
   right: 1rem;
@@ -14700,7 +14708,18 @@ form input {
 
 .date-picker .form-label {
   margin-bottom: .5rem;
-  font-weight: bold;
+  font-family: Poppins-Medium, Arial, sans-serif;
   display: block;
+}
+
+.choice {
+  align-items: center;
+  gap: .5rem;
+}
+
+#theme-count {
+  padding-bottom: .1rem;
+  font-family: Poppins-Medium, Arial, sans-serif;
+  font-size: clamp(.8rem, 2vw, 1rem);
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */
