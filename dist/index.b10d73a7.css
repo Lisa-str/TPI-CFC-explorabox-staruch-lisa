@@ -14666,7 +14666,7 @@ form input {
 }
 
 .date-picker .date {
-  color: #050707;
+  color: #05070768;
   appearance: none;
   z-index: 2;
   background-color: #fbe1d0;
@@ -14696,5 +14696,11 @@ form input {
   top: 50%;
   right: 1rem;
   transform: translateY(-50%);
+}
+
+.date-picker .form-label {
+  margin-bottom: .5rem;
+  font-weight: bold;
+  display: block;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

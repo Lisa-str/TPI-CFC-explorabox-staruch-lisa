@@ -62,7 +62,7 @@
     padding: 1rem 2.5rem 1rem 0.8rem; // padding droit augmenté
     border: none;
     width: 100%;
-    color: #050707;
+    color: #05070768;
     appearance: none;
     -webkit-appearance: none;
     position: relative;
@@ -88,5 +88,13 @@
     color: $color-accent;
     font-size: 1rem;
     z-index: 3;
+  }
+}
+
+.date-picker {
+  .form-label {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
   }
 }
