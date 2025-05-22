@@ -49,6 +49,41 @@
   ul.dropdown-menu {
     width: 45.5%;
   }
+
+  .recap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h3 {
+      padding-bottom: 1.5rem;
+    }
+
+    .box {
+      background-color: $color-secondary;
+      color: $color-dark;
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    svg {
+      fill: $color-dark;
+    }
+
+    hr {
+      color: $color-accent;
+      width: 95%;
+      margin: 1rem 0.5rem;
+    }
+
+    .l-recap {
+      display: flex;
+      gap: 1rem;
+    }
+  }
 }
 
 .quantity-wrapper {

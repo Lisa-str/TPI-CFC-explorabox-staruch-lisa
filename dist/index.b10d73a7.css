@@ -14735,6 +14735,40 @@ ul.dropdown-menu .dropdown-item:hover {
   width: 45.5%;
 }
 
+.booking .recap {
+  flex-direction: column;
+  gap: .5rem;
+  display: flex;
+}
+
+.booking .recap h3, .booking .recap .h3 {
+  padding-bottom: 1.5rem;
+}
+
+.booking .recap .box {
+  color: #192322;
+  background-color: #fbe1d0;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.booking .recap svg {
+  fill: #192322;
+}
+
+.booking .recap hr {
+  color: #ee6d17;
+  width: 95%;
+  margin: 1rem .5rem;
+}
+
+.booking .recap .l-recap {
+  gap: 1rem;
+  display: flex;
+}
+
 .quantity-wrapper {
   flex-direction: column;
   gap: 3rem;
