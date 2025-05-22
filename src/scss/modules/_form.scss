@@ -55,4 +55,12 @@ label {
   p {
     font-size: clamp(0.6rem, 2vw, 0.8rem);
   }
+
+  a {
+    color: $color-accent;
+
+    &:hover {
+      color: $color-accent-hover;
+    }
+  }
 }

@@ -28,37 +28,37 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 col-sm-12 steps">
+          <div class="col-xl-3 col-md-12 steps">
             <div class="l-space-column">
               <div class="l-space-row">
                 <div class="button step ongoing">
                   <i class="fa-solid fa-check"></i>
                 </div>
-                <p>Escapade</p>
+                <p class="step-info">Escapade</p>
               </div>
               <div class="l-space-row">
                 <div class="button step ongoing">
                   <i class="fa-solid fa-check"></i>
                 </div>
-                <p>Personnalisation</p>
+                <p class="step-info">Personnalisation</p>
               </div>
               <div class="l-space-row">
                 <div class="button step ongoing">
                   <i class="fa-solid fa-check"></i>
                 </div>
-                <p>Informations personnelles</p>
+                <p class="step-info">Informations personnelles</p>
               </div>
               <div class="l-space-row">
                 <div class="button step ongoing">
                   <i class="fa-solid fa-check"></i>
                 </div>
-                <p>Récapitulatif</p>
+                <p class="step-info">Récapitulatif</p>
               </div>
               <div class="l-space-row">
                 <div class="button step ongoing">
                   <i class="fa-solid fa-check"></i>
                 </div>
-                <p>Finalisation</p>
+                <p class="step-info">Finalisation</p>
               </div>
             </div>
 
@@ -69,41 +69,66 @@
             <div class="row">
               <div class="col-12 booking-wrapper-title">
                 <h2>Merci pour votre réservation !</h2>
+                <p>
+                  Pour accéder à votre programme, téléchargez l’application
+                  ExploraBox et saisissez le code personnel reçu par e-mail.
+                  <br /><br />
+                  Vous recevrez prochainement une proposition détaillée de votre
+                  escapade. Le paiement se fera uniquement une fois l’offre
+                  validée avec vous.
+                </p>
               </div>
             </div>
             <div class="row big-booking">
               <div class="col-12 big-booking-dates l-space-column">
                 <div class="row">
-                  <h3 class="obligatory">Dates</h3>
-                  <p>
-                    Pour accéder à votre programme, téléchargez l’application
-                    ExploraBox et saisissez le code personnel reçu par e-mail.
-                    <br /><br />
-                    Vous recevrez prochainement une proposition détaillée de
-                    votre escapade. Le paiement se fera uniquement une fois
-                    l’offre validée avec vous.
-                  </p>
-                </div>
-                <div class="row">
-                  <div class="col-xl-5 col-md-7 col-sm-12">
-                    <div class="quantity-wrapper">
-                      <include src="include-formulaire-quantity.html"
-                        >{ "quantitycontrolmin": "1", "quantitycontrolmax":
-                        "10", "quantitycontrolvalue": "1" }</include
-                      >
-                      <div id="dates-container"></div>
-                    </div>
+                  <div class="col-sm-12 col-md-6">
+                    <img
+                      src="img/app.png"
+                      alt="les trois créateurs d'explorabox faisait un selfie heureux"
+                    />
                   </div>
-                </div>
-              </div>
+                  <div
+                    class="col-sm-12 col-md-6 d-flex flex-column justify-content-center about-content"
+                  >
+                    <div class="row">
+                      <div class="col-12">
+                        <h3>Votre compagnon de route vers l’inattendu</h3>
+                      </div>
+                      <div class="col-12">
+                        <p>
+                          Toutes les informations utiles vous seront
+                          communiquées directement via notre application.
+                          Veuillez la télécharger dès maintenant afin de
+                          recevoir les détails de votre première escapade
+                          surprise.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="cta-download">Téléchargez l’application !</p>
+                        <div class="buttons-next-to-each-other">
+                          <img
+                            src="img/svg/badge-app-store.svg"
+                            alt="App Store"
+                          />
+                          <img
+                            src="img/svg/badge-play-store.svg"
+                            alt="Google Play"
+                          />
+                        </div>
 
-              <div class="button-form-wrapper">
-                <div class="buttons-next-to-each-other">
-                  <div class="next">
-                    <include src="include-button.html"
-                      >{ "buttontext": "Retour à l’accueil", "buttonlink":
-                      "index.html" }</include
-                    >
+                        <div class="buttons-next-to-each-other">
+                          <div class="next">
+                            <include src="include-button.html"
+                              >{ "buttontext": "Retour à l’accueil",
+                              "buttonlink": "index.html" }</include
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

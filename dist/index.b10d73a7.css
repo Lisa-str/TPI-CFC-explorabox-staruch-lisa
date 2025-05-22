@@ -14015,6 +14015,14 @@ label p {
   font-size: clamp(.6rem, 2vw, .8rem);
 }
 
+label a {
+  color: #ee6d17;
+}
+
+label a:hover {
+  color: #af4506;
+}
+
 .dropdown-toggle {
   color: #fffdfb;
 }
@@ -14745,6 +14753,14 @@ ul.dropdown-menu .dropdown-item:hover {
   padding-bottom: 1.5rem;
 }
 
+.booking .recap .price {
+  padding: 2rem 0;
+}
+
+.booking .recap .price .final-price {
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
+}
+
 .booking .recap .box {
   color: #192322;
   background-color: #fbe1d0;
@@ -14767,6 +14783,10 @@ ul.dropdown-menu .dropdown-item:hover {
 .booking .recap .l-recap {
   gap: 1rem;
   display: flex;
+}
+
+.booking .cta-download {
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .quantity-wrapper {
@@ -14866,6 +14886,7 @@ ul.dropdown-menu .dropdown-item:hover {
 }
 
 .steps {
+  background-color: #fffdfb;
   flex-direction: column;
   gap: 1rem;
   display: flex;
@@ -14876,6 +14897,10 @@ ul.dropdown-menu .dropdown-item:hover {
 
 .steps .l-space-column {
   gap: 2rem;
+}
+
+.steps .l-space-row {
+  align-items: flex-start;
 }
 
 .steps .step {
@@ -14891,6 +14916,7 @@ ul.dropdown-menu .dropdown-item:hover {
   justify-content: center;
   align-items: center;
   width: 2rem;
+  height: 2rem;
   padding: 0;
   font-size: 1rem;
   display: flex;
@@ -14899,5 +14925,26 @@ ul.dropdown-menu .dropdown-item:hover {
 .steps .step.ongoing, .steps .step.complete {
   color: #fffdfb;
   background-color: #ee6d17;
+}
+
+@media screen and (width <= 1199px) {
+  .booking .box.graphic-wrapper {
+    display: none;
+  }
+
+  .booking h1, .booking .h1 {
+    padding: 2.5rem 0 0;
+  }
+
+  .steps .l-space-column {
+    flex-direction: row;
+    place-content: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .steps .step-info {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

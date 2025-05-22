@@ -59,6 +59,14 @@
       padding-bottom: 1.5rem;
     }
 
+    .price {
+      padding: 2rem 0;
+
+      .final-price {
+        font-size: clamp(1.3rem, 2vw, 1.5rem);
+      }
+    }
+
     .box {
       background-color: $color-secondary;
       color: $color-dark;
@@ -83,6 +91,10 @@
       display: flex;
       gap: 1rem;
     }
+  }
+
+  .cta-download {
+    font-size: clamp(1rem, 2vw, 1.2rem);
   }
 }
 
@@ -193,11 +205,15 @@
   gap: 1rem;
   position: sticky;
   top: 5rem;
-  // height: calc(100vh - 7rem);
   overflow-y: auto;
+  background-color: $color-light;
 
   .l-space-column {
     gap: 2rem;
+  }
+
+  .l-space-row {
+    align-items: flex-start;
   }
 
   .step {
@@ -207,6 +223,7 @@
 
   .step.button {
     width: 2rem;
+    height: 2rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     padding: 0;
@@ -223,5 +240,31 @@
   .step.complete {
     background-color: $color-accent;
     color: $color-light;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .booking {
+    .box.graphic-wrapper {
+      display: none;
+    }
+
+    h1 {
+      padding: 2.5rem 0 0 0;
+    }
+  }
+
+  .steps {
+    .l-space-column {
+      flex-direction: row;
+      padding: 2rem 0;
+      align-content: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .step-info {
+      display: none;
+    }
   }
 }
