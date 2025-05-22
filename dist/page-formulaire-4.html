@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire de réservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.b10d73a7.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="container header">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-between align-items-center">
+      <div class="box header-primary-navigation">
+        <a href="/index.html"><img src="/Explorabox.67afeac0.svg" alt="logo explorabox"></a>
+
+        <nav class="desktop-nav">
+          <div class="links">
+            <a href="/page-escapade.html">Les escapades</a>
+            <a href="">Le concept</a>
+            <a href="">À propos</a>
+            <a href="">Contact</a>
+          </div>
+        </nav>
+        <div class="dropdown desktop-language">
+          <div class="button dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            FR
+          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">FR</a></li>
+            <li><a class="dropdown-item" href="#">EN</a></li>
+            <li><a class="dropdown-item" href="#">DE</a></li>
+            <li><a class="dropdown-item" href="#">IT</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="/page-formulaire-1.html" class="button button-big">Réserver !</a>
+      <div class="links-mobile-toggle button">
+        <i class="fa-solid fa-bars" id="open-menu"></i>
+      </div>
+    </div>
+  </div>
+  <div class="menu-mobile" id="mobile-menu">
+    <div class="menu-header">
+      <img src="/Explorabox.67afeac0.svg" alt="logo explorabox">
+      <i class="fa-solid fa-xmark" id="close-menu"></i>
+    </div>
+    <nav class="mobile-nav">
+      <a href="/page-escapade.html">Les escapades</a>
+      <a href="">Le concept</a>
+      <a href="">À propos</a>
+      <a href="">Contact</a>
+      <a class="button button-big" href="/page-formulaire-1.html">Réserver !</a>
+      <div class="dropdown mobile-language">
+        <div class="button dropdown-toggle" id="dropdownMenuButtonMobile" data-bs-toggle="dropdown" aria-expanded="false">
+          FR
+        </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonMobile">
+          <li><a class="dropdown-item" href="#">FR</a></li>
+          <li><a class="dropdown-item" href="#">EN</a></li>
+          <li><a class="dropdown-item" href="#">DE</a></li>
+          <li><a class="dropdown-item" href="#">IT</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </nav>
+  </div>
+  <div id="menu-overlay"></div>
+</header>
+
+
+    <main class="container">
+      <div class="container booking l-space-column">
+        <div class="row">
+          <div class="col-12">
+            <h1>Réservation</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-12 steps">
+            <div class="l-space-column">
+              <div class="l-space-row">
+                <div class="button step ongoing">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <p>Escapade</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step ongoing">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <p>Personnalisation</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step ongoing">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <p>Informations personnelles</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step ongoing"><p>4</p></div>
+
+                <p>Récapitulatif</p>
+              </div>
+              <div class="l-space-row">
+                <div class="button step"><p>5</p></div>
+
+                <p>Finalisation</p>
+              </div>
+            </div>
+
+            <!-- <div class="summary summary-mini">récap</div> -->
+          </div>
+
+          <div class="col-md-9 col-sm-12 booking-wrapper">
+            <div class="row">
+              <div class="col-12 booking-wrapper-title">
+                <h2>Récapitulatif</h2>
+              </div>
+            </div>
+            <div class="row big-booking">
+              <div class="col-12 big-booking-dates l-space-column">
+                <div class="row">
+                  <h3 class="obligatory">Dates</h3>
+                  <p>
+                    Définissez le nombre de dates voulues jusqu’à 10 escapades.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-xl-5 col-md-7 col-sm-12">
+                    <div class="quantity-wrapper">
+                      <div class="quantity-control d-flex">
+  <button class="minus button">
+    <i class="fa-solid fa-minus"></i>
+  </button>
+  <input type="number" class="quantity" min="1" max="10" value="1" readonly="">
+  <button class="plus button">
+    <i class="fa-solid fa-plus"></i>
+  </button>
+</div>
+
+                      <div id="dates-container"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="button-form-wrapper">
+                <div class="buttons-next-to-each-other">
+                  <div class="back">
+                    <a class="button button-second" href="/page-formulaire-3.html">Retours</a>
+
+                  </div>
+                  <div class="next">
+                    <a class="button" href="/page-formulaire-5.html">Suivant</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer container">
+  <div class="row box box-1">
+    <div class="col-md-3 col-6">
+      <a href=""><img src="/Explorabox-2.fbd93b0a.svg" alt="logo explorabox"></a>
+    </div>
+    <div class="col-sm-3 col-md-2 col-xl-1">
+      <div class="dropdown mobile-language">
+        <div class="button dropdown-toggle" id="dropdownMenuButtonMobile" data-bs-toggle="dropdown" aria-expanded="false">
+          FR
+        </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonMobile">
+          <li><a class="dropdown-item" href="#">FR</a></li>
+          <li><a class="dropdown-item" href="#">EN</a></li>
+          <li><a class="dropdown-item" href="#">DE</a></li>
+          <li><a class="dropdown-item" href="#">IT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 d-flex flex-column footer-nav">
+        <h4 class="sub-title">ExploraBox</h4>
+        <a href="/page-escapade.html">Les escapades</a>
+        <a href="">Le concept</a>
+        <a href="">À propos</a>
+        <a href="">Contact</a>
+        <a class="button" href="">Réserver !</a>
+
+      </div>
+      <div class="col-5">
+        <h4 class="sub-title">Coordonnées</h4>
+        <p>
+          Site de blueFACTORY <br>Fribourg Passage du Cardinal 11 <br>1700
+          Fribourg
+        </p>
+        <a href="tel:+41265000000">+41 (0)26 500 00 00</a>
+        <a href="mailto:hello@explora.box">hello@explora.box</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="box box-2 row">
+    <div class="newsletter col-md-6 col-sm-12">
+      <h3 class="sub-title">Newsletter</h3>
+      <form action="">
+        <input type="email" placeholder="exemple@epxlorabox.ch">
+        <div class="button" type="submit">S’abonner</div>
+      </form>
+    </div>
+    <div class="cta-app col-md-5 col-sm-12">
+      <h3 class="sub-title">Application</h3>
+      <p class="cta-download">Téléchargez l’application !</p>
+      <div class="buttons-next-to-each-other col-4">
+        <img src="/badge-app-store.1d287a73.svg" alt="App Store">
+        <img src="/badge-play-store.bd7beea2.svg" alt="Google Play">
+      </div>
+    </div>
+  </div>
+
+  <div class="row box box-3">
+    <div class="col flex-wrap justify-content-between legal-mentions">
+      <p>®Explorabox</p>
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">Mentions légales</a>
+    </div>
+
+    <div class="col-md-3 col-sm-12">
+      <div class="socials">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/index.18dbc454.js" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/6013118502.js" crossorigin="anonymous"></script>
+  </body>
+</html>

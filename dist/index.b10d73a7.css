@@ -13539,7 +13539,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
   font-style: normal;
   font-weight: 500;
-  line-height: 120.2%;
   font-size: clamp(2rem, 2.5vw, 2.2rem) !important;
 }
 
@@ -13548,35 +13547,32 @@ h2, .h2 {
   padding: 1.5rem 0;
   font-style: normal;
   font-weight: 500;
-  line-height: 2.8125rem;
   font-size: clamp(1.45rem, 2.5vw, 2rem) !important;
 }
 
 h3, .h3 {
   font-style: normal;
   font-weight: 500;
-  line-height: 1.8125rem;
   font-size: clamp(1.1rem, 2.5vw, 1.3rem) !important;
 }
 
 h4, .h4, .sub-title {
-  font-style: normal;
+  font-family: Poppins-Medium, Arial, sans-serif;
   font-weight: 500;
-  line-height: 1.8125rem;
+  line-height: normal;
   font-size: clamp(1.2rem, 2.5vw, 1.3rem) !important;
 }
 
 h5, .h5 {
   font-style: normal;
   font-weight: 500;
-  line-height: 1.4375rem;
+  line-height: normal;
   font-size: clamp(.8rem, 2.5vw, 1rem) !important;
 }
 
 p, a {
   font-family: Poppins-Regular, Arial, sans-serif;
   font-size: clamp(.8rem, 2.5vw, 1rem);
-  line-height: 1.4375rem;
   margin-bottom: 0 !important;
 }
 
@@ -13661,6 +13657,11 @@ img {
   display: flex;
 }
 
+.l-space-row-big {
+  gap: 2rem;
+  display: flex;
+}
+
 .l-space-column {
   flex-direction: column;
   gap: 1rem;
@@ -13670,6 +13671,12 @@ img {
 .l-space-column-mini {
   flex-direction: column;
   gap: .5rem;
+  display: flex;
+}
+
+.l-space-column-big {
+  flex-direction: column;
+  gap: 2.5rem;
   display: flex;
 }
 
@@ -13988,16 +13995,55 @@ form input {
   border: none;
 }
 
+#FormControlTextarea1, #FormControlTextarea2, #FormControlTextarea3, #FormControlTextarea4, #FormControlTextarea5, #FormControlTextarea6, #InputEmail1, #typePhone {
+  background: #fbe1d0;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+#FormControlTextarea1:focus, #FormControlTextarea2:focus, #FormControlTextarea3:focus, #FormControlTextarea4:focus, #FormControlTextarea5:focus, #FormControlTextarea6:focus, #InputEmail1:focus, #typePhone:focus {
+  background: #fbe1d0 !important;
+  border: none !important;
+}
+
+label {
+  width: 100%;
+}
+
+label p {
+  font-size: clamp(.6rem, 2vw, .8rem);
+}
+
 .dropdown-toggle {
   color: #fffdfb;
 }
 
-.dropdown-menu {
-  background: #fffdfb;
+ul.dropdown-menu {
+  background: #fbe1d0;
+  border: none;
+  border-radius: 10px;
+  padding: .5rem;
 }
 
-.dropdown-menu .dropdown-item {
+ul.dropdown-menu li {
+  border-bottom: 1px solid #e69b6e;
+}
+
+ul.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+ul.dropdown-menu .dropdown-item {
   color: #192322;
+  padding: .5rem;
+}
+
+ul.dropdown-menu .dropdown-item:hover {
+  color: #fffdfb;
+  background: #ee6d17;
+  border-radius: 10px;
+  margin: .3rem 0 !important;
 }
 
 .card-getaway {
@@ -14649,6 +14695,14 @@ form input {
   padding: .5rem 0;
 }
 
+.booking h1, .booking .h1 {
+  padding: 2.5rem 0;
+}
+
+.booking h4, .booking .h4 {
+  font-size: clamp(1rem, 2vw, 1.1rem) !important;
+}
+
 .booking .obligatory:after {
   content: "*";
   color: #ee6d17;
@@ -14659,8 +14713,26 @@ form input {
 .booking .big-booking {
   flex-direction: column;
   gap: 5.2rem;
-  padding-top: 5.2rem;
+  padding-top: 4rem;
   display: flex;
+}
+
+.booking .booking-form-infos .col-md-6.col-sm-12 {
+  margin: .5rem 0;
+}
+
+.booking .dropdown-toggle {
+  color: #192322;
+}
+
+.booking .button.dropdown-toggle {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.booking ul.dropdown-menu {
+  width: 45.5%;
 }
 
 .quantity-wrapper {
@@ -14763,6 +14835,13 @@ form input {
   flex-direction: column;
   gap: 1rem;
   display: flex;
+  position: sticky;
+  top: 5rem;
+  overflow-y: auto;
+}
+
+.steps .l-space-column {
+  gap: 2rem;
 }
 
 .steps .step {

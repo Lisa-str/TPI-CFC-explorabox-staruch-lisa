@@ -37,14 +37,12 @@ h1 {
   font-size: clamp(2rem, 2.5vw, 2.2rem) !important;
   font-style: normal;
   font-weight: 500;
-  line-height: 120.2%;
 }
 
 h2 {
   font-size: clamp(1.45rem, 2.5vw, 2rem) !important;
   font-style: normal;
   font-weight: 500;
-  line-height: 2.8125rem;
   padding: 1.5rem 0;
   text-align: center;
 }
@@ -53,16 +51,14 @@ h3 {
   font-size: clamp(1.1rem, 2.5vw, 1.3rem) !important;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.8125rem;
 }
 
 h4,
 .sub-title {
   font-size: clamp(1.2rem, 2.5vw, 1.3rem) !important;
-  font-style: normal;
+  font-family: $font-medium;
   font-weight: 500;
   line-height: normal;
-  line-height: 1.8125rem;
 }
 
 h5 {
@@ -70,7 +66,6 @@ h5 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  line-height: 1.4375rem;
 }
 
 p,
@@ -78,7 +73,6 @@ a {
   margin-bottom: 0 !important;
   font-family: $font-regular;
   font-size: clamp(0.8rem, 2.5vw, 1rem);
-  line-height: 1.4375rem;
 }
 
 .accordion-header h3 {

@@ -29,3 +29,30 @@ form {
     }
   }
 }
+
+#FormControlTextarea1,
+#FormControlTextarea2,
+#FormControlTextarea3,
+#FormControlTextarea4,
+#FormControlTextarea5,
+#FormControlTextarea6,
+#InputEmail1,
+#typePhone {
+  background: $color-secondary;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+
+  &:focus {
+    background: $color-secondary !important;
+    border: none !important;
+  }
+}
+
+label {
+  width: 100%;
+
+  p {
+    font-size: clamp(0.6rem, 2vw, 0.8rem);
+  }
+}
