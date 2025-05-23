@@ -115,6 +115,11 @@
     justify-content: end;
     text-align: end;
     align-items: flex-end;
+    z-index: 2000;
+
+    .button {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+    }
 
     li a {
       font-size: clamp(0.7rem, 5vw, 1rem);
@@ -219,5 +224,7 @@
 
   .menu-mobile {
     padding: 1rem;
+    width: 100%;
+    border-radius: 0;
   }
 }

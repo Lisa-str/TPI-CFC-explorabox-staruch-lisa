@@ -155,7 +155,7 @@
 
 @media (max-width: 1300px) {
   #homepage .bento {
-    height: 80dvh;
+    height: 100dvh;
   }
 
   .bento {
@@ -181,8 +181,18 @@
 }
 
 @media (max-width: 576px) {
+  #contact {
+    .bento {
+      height: 105dvh;
+    }
+  }
+
   #a-propos,
   #concept {
+    .bento {
+      height: 70dvh;
+    }
+
     .stretch-img {
       display: none;
     }

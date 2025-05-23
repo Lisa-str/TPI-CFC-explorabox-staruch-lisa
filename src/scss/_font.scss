@@ -53,12 +53,18 @@ h3 {
   font-weight: 500;
 }
 
-h4,
-.sub-title {
-  font-size: clamp(1.2rem, 2.5vw, 1.3rem) !important;
+h4 {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem) !important;
   font-family: $font-medium;
   font-weight: 500;
   line-height: normal;
+}
+
+.sub-title {
+  font-size: clamp(1rem, 2.5vw, 1.3rem) !important;
+  font-family: $font-medium;
+  font-weight: 500;
+  line-height: 110%;
 }
 
 h5 {

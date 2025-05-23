@@ -13556,11 +13556,18 @@ h3, .h3 {
   font-size: clamp(1.1rem, 2.5vw, 1.3rem) !important;
 }
 
-h4, .h4, .sub-title {
+h4, .h4 {
   font-family: Poppins-Medium, Arial, sans-serif;
   font-weight: 500;
   line-height: normal;
-  font-size: clamp(1.2rem, 2.5vw, 1.3rem) !important;
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem) !important;
+}
+
+.sub-title {
+  font-family: Poppins-Medium, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 110%;
+  font-size: clamp(1rem, 2.5vw, 1.3rem) !important;
 }
 
 h5, .h5 {
@@ -13704,6 +13711,10 @@ svg.decoration-1, svg.decoration-2 {
 
   .decoration-2 {
     bottom: 0;
+  }
+
+  .decoration {
+    overflow: hidden;
   }
 }
 
@@ -13911,7 +13922,7 @@ svg.decoration-1, svg.decoration-2 {
   font-style: normal;
   font-weight: 600;
   line-height: 3.75rem;
-  font-size: clamp(2.5rem, 5vw, 3rem) !important;
+  font-size: clamp(2rem, 5vw, 3rem) !important;
 }
 
 .box-explanation {
@@ -14268,7 +14279,7 @@ ul.dropdown-menu .dropdown-item:hover {
 
 @media (width <= 1300px) {
   #homepage .bento {
-    height: 80dvh;
+    height: 100dvh;
   }
 
   .bento {
@@ -14294,6 +14305,14 @@ ul.dropdown-menu .dropdown-item:hover {
 }
 
 @media (width <= 576px) {
+  #contact .bento {
+    height: 105dvh;
+  }
+
+  #a-propos .bento, #concept .bento {
+    height: 70dvh;
+  }
+
   #a-propos .stretch-img, #concept .stretch-img {
     display: none;
   }
@@ -14367,7 +14386,7 @@ ul.dropdown-menu .dropdown-item:hover {
   }
 }
 
-#concept i {
+#concept .about-content i {
   color: #ee6d17;
   font-size: clamp(1rem, 5vw, 1.3rem);
 }
@@ -14580,6 +14599,7 @@ ul.dropdown-menu .dropdown-item:hover {
 
 .menu-mobile .mobile-nav {
   text-align: end;
+  z-index: 2000;
   flex-direction: column;
   justify-content: end;
   align-items: flex-end;
@@ -14587,6 +14607,10 @@ ul.dropdown-menu .dropdown-item:hover {
   width: 100%;
   margin-top: 2rem;
   display: flex;
+}
+
+.menu-mobile .mobile-nav .button {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
 }
 
 .menu-mobile .mobile-nav li a {
@@ -14686,6 +14710,8 @@ ul.dropdown-menu .dropdown-item:hover {
   }
 
   .menu-mobile {
+    border-radius: 0;
+    width: 100%;
     padding: 1rem;
   }
 }
@@ -15056,7 +15082,7 @@ ul.dropdown-menu .dropdown-item:hover {
   display: flex;
 }
 
-.team .sous-titre {
+.team .sub-title {
   text-align: center;
 }
 
@@ -15077,9 +15103,9 @@ ul.dropdown-menu .dropdown-item:hover {
 }
 
 @media screen and (width <= 768px) {
-  .team .team-members, .team .each-value, .values .team-members, .values .each-value {
-    flex-direction: column;
-    gap: 2rem;
+  .team .team-members {
+    flex-direction: row;
+    gap: 1rem;
   }
 
   .values {
@@ -15087,6 +15113,8 @@ ul.dropdown-menu .dropdown-item:hover {
   }
 
   .values .each-value {
+    flex-direction: column;
+    gap: 2rem;
     width: 100%;
   }
 }

@@ -19,7 +19,7 @@
     display: flex;
   }
 
-  .sous-titre {
+  .sub-title {
     text-align: center;
   }
 }
@@ -41,12 +41,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .team,
-  .values {
-    .team-members,
-    .each-value {
-      flex-direction: column;
-      gap: 2rem;
+  .team {
+    .team-members {
+      flex-direction: row;
+      gap: 1rem;
     }
   }
 
@@ -54,6 +52,8 @@
     flex-direction: column;
     .each-value {
       width: 100%;
+      flex-direction: column;
+      gap: 2rem;
     }
   }
 }
