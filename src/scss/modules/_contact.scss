@@ -1,0 +1,26 @@
+/* contact ↓ */
+
+#contact {
+  .stretch-img {
+    gap: 0.5rem;
+    display: flex;
+  }
+  .infos {
+    display: flex;
+    gap: 0.5rem;
+    .box {
+      // width: 70%;
+      height: 100%;
+      justify-content: flex-start;
+    }
+
+    .box-icones {
+      // width: 30%;
+      justify-content: center;
+
+      i {
+        font-size: clamp(1.5rem, 2vw, 4rem);
+      }
+    }
+  }
+}
