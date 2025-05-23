@@ -13547,7 +13547,7 @@ h2, .h2 {
   padding: 1.5rem 0;
   font-style: normal;
   font-weight: 500;
-  font-size: clamp(1.45rem, 2.5vw, 2rem) !important;
+  font-size: clamp(1.3rem, 2.5vw, 2rem) !important;
 }
 
 h3, .h3 {
@@ -13639,7 +13639,7 @@ svg {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 @media screen and (width <= 768px) {
@@ -13717,8 +13717,11 @@ svg.decoration-1, svg.decoration-2 {
 }
 
 .swiper .swiper-wrapper {
+  padding: 2px;
+}
+
+.swiper > .swiper-getaway {
   border-radius: 10px;
-  padding: 10px;
 }
 
 .custom-controls .getaway-button-prev, .custom-controls .getaway-button-next, .custom-controls .testimonial-button-prev, .custom-controls .testimonial-button-next {
@@ -15104,5 +15107,48 @@ ul.dropdown-menu .dropdown-item:hover {
 
 #contact .infos .box-icones i {
   font-size: clamp(1.5rem, 2vw, 4rem);
+}
+
+#detail-page .price {
+  font-family: Poppins-Medium, Arial, sans-serif;
+  font-size: clamp(1.1rem, 2vw + 1rem, 1.3rem);
+}
+
+#detail-page .box {
+  padding: 1.5rem;
+}
+
+#detail-page .box i {
+  color: #ee6d17;
+  font-size: clamp(1rem, 5vw, 1.3rem);
+}
+
+#detail-page .info {
+  opacity: .5;
+}
+
+#detail-page .breadcrumb .breadcrumb-item, #detail-page .breadcrumb .breadcrumb-item a {
+  color: #192322;
+  font-family: Poppins-Regular, Arial, sans-serif;
+}
+
+#detail-page .breadcrumb .breadcrumb-item a:hover {
+  color: #af4506;
+}
+
+#detail-page .breadcrumb .active {
+  color: #ee6d17;
+  font-family: Poppins-Medium, Arial, sans-serif;
+}
+
+#detail-page .breadcrumb .active:before {
+  color: #192322;
+  content: var(--bs-breadcrumb-divider, ">");
+}
+
+@media screen and (width <= 768px) {
+  #detail-page .graphic-wrapper {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

@@ -146,6 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function refreshAll() {
+    if (!mainQuantityInput || !adultInput || !childInput) return;
+
     const mainCount = parseInt(mainQuantityInput.value);
     const adultCount = parseInt(adultInput.value);
     const childCount = parseInt(childInput.value);

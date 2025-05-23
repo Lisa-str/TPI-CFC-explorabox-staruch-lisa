@@ -1,0 +1,53 @@
+/* escapade détail ↓ */
+
+#detail-page {
+  .price {
+    font-family: $font-medium;
+    font-size: clamp(1.1rem, 2vw + 1rem, 1.3rem);
+  }
+
+  .box {
+    padding: 1.5rem;
+    i {
+      color: $color-accent;
+      font-size: clamp(1rem, 5vw, 1.3rem);
+    }
+  }
+
+  .info {
+    opacity: 0.5;
+  }
+
+  .breadcrumb {
+    .breadcrumb-item {
+      color: $color-dark;
+      font-family: $font-regular;
+
+      a {
+        color: $color-dark;
+        font-family: $font-regular;
+
+        &:hover {
+          color: $color-accent-hover;
+        }
+      }
+    }
+    .active {
+      color: $color-accent;
+      font-family: $font-medium;
+
+      &::before {
+        color: $color-dark;
+        content: var(--bs-breadcrumb-divider, ">");
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #detail-page {
+    .graphic-wrapper {
+      display: none;
+    }
+  }
+}
