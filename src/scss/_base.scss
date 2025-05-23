@@ -82,6 +82,8 @@ img {
   }
 }
 
+/* layout ↓ */
+
 .l-space-row {
   display: flex;
   gap: 0.5rem;
@@ -108,4 +110,37 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+
+/* decoration ↓ */
+
+.decoration-1 {
+  top: -2.3rem;
+  left: -14rem;
+}
+
+.decoration-2 {
+  bottom: -2.3rem;
+  right: -14rem;
+}
+
+svg.decoration-1,
+svg.decoration-2 {
+  fill: $color-secondary;
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .decoration-1 {
+    top: 0;
+  }
+  .decoration-2 {
+    bottom: 0;
+  }
+}
+
+.decoration {
+  position: relative;
 }

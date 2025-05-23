@@ -8,6 +8,12 @@
   }
 
   .big-img-bento {
+    img {
+      height: 100%;
+    }
+  }
+
+  .big-img-bento {
     flex: 1 0 0;
     img {
       height: 100%;
@@ -46,16 +52,45 @@
   }
 }
 
+#a-propos,
+#concept {
+  .bento {
+    height: 50dvh;
+    .stretch-img {
+      height: 0%;
+    }
+    img {
+      height: 100%;
+    }
+  }
+}
+
+#contact {
+  .bento {
+    height: 50dvh;
+  }
+}
+
 /* responsive */
 @media (max-width: 900px) {
   .bento {
     flex-direction: column;
     height: auto;
+  }
 
-    .big-img-bento {
-      height: 20vh;
-      img {
-        height: 100%;
+  #a-propos,
+  #concept {
+    .bento {
+      .side-bento {
+        flex: none;
+      }
+
+      .stretch-img {
+        display: none;
+      }
+
+      .big-img-bento {
+        height: 50%;
       }
     }
   }
@@ -63,21 +98,64 @@
 
 @media (max-width: 900px) {
   .bento {
-    height: 70vh;
-
-    .graphic-wrapper {
-      display: none;
-    }
+    height: 70dvh;
   }
 
-  .mini-bento {
-    height: 100%;
+  #homepage {
+    .bento {
+      .graphic-wrapper {
+        display: none;
+      }
+    }
+    .big-img-bento {
+      height: 10%;
+    }
+
+    .mini-bento {
+      height: 100%;
+    }
   }
 }
 
 @media (max-width: 1100px) {
   .bento {
-    height: 110vh;
+    height: 110dvh;
+  }
+
+  .mini-bento {
+    height: 100%;
+
+    .graphic-wrapper {
+      display: flex;
+      flex-grow: 1;
+    }
+  }
+
+  #homepage {
+    .bento-two {
+      flex-direction: column;
+    }
+  }
+
+  #a-propos,
+  #concept {
+    .stretch-img {
+      height: 42%;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  #homepage .bento {
+    height: 80dvh;
+  }
+
+  .bento {
+    height: 65dvh;
+  }
+
+  .side-bento {
+    flex: none;
   }
 
   .mini-bento {
@@ -94,21 +172,20 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .bento {
-    height: 80vh;
-  }
-
-  .mini-bento {
-    height: 100%;
-
-    .graphic-wrapper {
-      display: flex;
-      flex-grow: 1;
+@media (max-width: 576px) {
+  #a-propos,
+  #concept {
+    .stretch-img {
+      display: none;
     }
-  }
+    .big-img-bento {
+      height: 50%;
+    }
 
-  .bento-two {
-    flex-direction: column;
+    .bento-two {
+      .graphic-wrapper {
+        display: none;
+      }
+    }
   }
 }
