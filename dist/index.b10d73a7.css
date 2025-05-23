@@ -13789,7 +13789,7 @@ svg.decoration-1, svg.decoration-2 {
 
 .cta-download {
   color: #ee6d17;
-  font-size: clamp(1.5rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 .button.cta {
@@ -13806,7 +13806,7 @@ svg.decoration-1, svg.decoration-2 {
 
 .button.cta p, .button.cta i {
   color: #fffdfb;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(.9rem, 2.5vw, 1.1rem);
 }
 
 .button.cta:hover {
@@ -14354,6 +14354,11 @@ ul.dropdown-menu .dropdown-item:hover {
   .about-content {
     padding-top: 2rem;
   }
+}
+
+#concept i {
+  color: #ee6d17;
+  font-size: clamp(1rem, 5vw, 1.3rem);
 }
 
 .concept {

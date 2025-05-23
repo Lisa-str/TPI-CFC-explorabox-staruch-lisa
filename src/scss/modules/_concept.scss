@@ -1,5 +1,12 @@
 /* concept ↓ */
 
+#concept {
+  i {
+    color: $color-accent;
+    font-size: clamp(1rem, 5vw, 1.3rem);
+  }
+}
+
 .concept {
   gap: 1.5rem;
   position: relative;
