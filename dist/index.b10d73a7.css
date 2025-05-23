@@ -14762,6 +14762,28 @@ ul.dropdown-menu .dropdown-item:hover {
   padding: 2.5rem 0;
 }
 
+.booking .type {
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem 0;
+  display: flex;
+}
+
+.booking .type label {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.booking .type .form-check {
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.booking .type .form-check-input {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
 .booking h4, .booking .h4 {
   font-size: clamp(1rem, 2vw, 1.1rem) !important;
 }
@@ -14886,7 +14908,7 @@ ul.dropdown-menu .dropdown-item:hover {
 }
 
 .date-picker .date {
-  color: #05070768;
+  color: #192322;
   appearance: none;
   z-index: 2;
   background-color: #fbe1d0;

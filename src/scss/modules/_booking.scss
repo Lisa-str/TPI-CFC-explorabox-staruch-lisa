@@ -10,6 +10,27 @@
     padding: 2.5rem 0;
   }
 
+  .type {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+
+    label {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+    .form-check {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .form-check-input {
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+    }
+  }
+
   h4 {
     font-size: clamp(1rem, 2vw, 1.1rem) !important;
   }
@@ -146,7 +167,7 @@
     padding: 1rem 2.5rem 1rem 0.8rem; // padding droit augmenté
     border: none;
     width: 100%;
-    color: #05070768;
+    color: $color-dark;
     appearance: none;
     -webkit-appearance: none;
     position: relative;
