@@ -26,9 +26,11 @@
     }
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.15.2",
     "@parcel/transformer-sass": "^2.12.0",
+    "@parcel/transformer-webmanifest": "^2.15.2",
     "buffer": "^6.0.3",
-    "parcel": "^2.12.0",
+    "parcel": "^2.15.2",
     "parcel-namer-rewrite": "^2.10.3-rc.2",
     "path-browserify": "^1.0.1",
     "posthtml": "^0.16.6",
@@ -40,7 +42,7 @@
     "process": "^0.11.10",
     "rimraf": "^6.0.1",
     "sass": "^1.69.5",
-    "sharp": "^0.31.3",
+    "sharp": "^0.33.5",
     "vm-browserify": "^1.1.2"
   },
   "dependencies": {

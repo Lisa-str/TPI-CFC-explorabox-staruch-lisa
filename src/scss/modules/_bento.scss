@@ -153,9 +153,15 @@
   }
 }
 
+@media (min-height: 800px) {
+  #homepage .bento {
+    height: 40dvh;
+  }
+}
+
 @media (max-width: 1300px) {
   #homepage .bento {
-    height: 70dvh;
+    height: 85dvh;
   }
 
   .bento {
