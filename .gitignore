@@ -1,1 +1,13 @@
+# macOS
 .DS_Store
+
+# Parcel
+.parcel-cache/
+
+# node
+node_modules/
+dist/
+
+# Divers
+*.log
+*.map
