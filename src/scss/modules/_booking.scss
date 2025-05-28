@@ -225,9 +225,36 @@
   flex-direction: column;
   gap: 1rem;
   position: sticky;
-  top: 5rem;
-  overflow-y: auto;
+
   background-color: $color-light;
+
+  .steps-line-done {
+    position: absolute;
+
+    height: 0%;
+
+    border: solid 2px $color-accent;
+    top: 0;
+    left: 1.7rem;
+    z-index: 10;
+
+    opacity: 1;
+  }
+
+  .steps-line-not-done {
+    position: absolute;
+    height: 11%;
+    border: solid 2px $color-secondary;
+    top: 0;
+    left: 1.7rem;
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .steps-line-not-done-5,
+  .steps-line-done-5 {
+    height: 45%;
+  }
 
   .l-space-column {
     gap: 2rem;
@@ -240,6 +267,7 @@
   .step {
     display: flex;
     gap: 0.5rem;
+    z-index: 100;
   }
 
   .step.button {
@@ -284,8 +312,22 @@
       gap: 1.5rem;
     }
 
+    .steps-line-not-done,
+    .steps-line-done {
+      display: none;
+    }
+
     .step-info {
       display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .steps {
+    .steps-line-not-done-5,
+    .steps-line-done-5 {
+      height: 38%;
     }
   }
 }
