@@ -37,14 +37,15 @@
   .box-3 {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.5rem;
     align-items: start;
   }
 
   .box-1 {
+    gap: 1.5rem;
     .footer-nav {
       display: flex;
-      gap: 0.6rem;
+      gap: 0.8rem;
       flex-direction: column;
     }
   }
@@ -59,6 +60,12 @@
       i {
         font-size: clamp(2rem, 2vw, 2.4rem);
         color: $color-light;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          color: $color-accent;
+        }
       }
     }
   }
