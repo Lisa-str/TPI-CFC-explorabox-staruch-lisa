@@ -27,11 +27,11 @@
   }
 
   .accordion-button:not(.collapsed)::after {
-    background-image: url("/src/img/svg/minus.svg");
+    background-image: url("/src/svg/minus.svg");
   }
 
   .accordion-button::after {
-    background-image: url("/src/img/svg/plus.svg");
+    background-image: url("/src/svg/plus.svg");
   }
 
   .accordion-item:first-of-type > .accordion-header .accordion-button,
