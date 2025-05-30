@@ -5,7 +5,7 @@ import { Navigation } from "swiper/modules";
 
 const swiper = new Swiper(".swiper-getaway", {
   modules: [Navigation],
-  slidesPerView: 2,
+  slidesPerView: 3,
   spaceBetween: 16,
   navigation: {
     nextEl: ".getaway-button-next",
@@ -16,9 +16,16 @@ const swiper = new Swiper(".swiper-getaway", {
   breakpoints: {
     1200: { slidesPerView: 3 },
   },
+  on: {
+    init() {
+      setTimeout(() => {
+        swiper.update(); // <- recalcul complet
+        swiper.navigation.update(); // <- refresh boutons
+        console.log("Update forcé après timeout");
+      }, 500); // <- attendre un peu les images
+    },
+  },
 });
-
-console.log(window.innerWidth);
 
 const testimonialSwiper = new Swiper(".swiper-testimonial", {
   modules: [Navigation],
@@ -27,6 +34,26 @@ const testimonialSwiper = new Swiper(".swiper-testimonial", {
   navigation: {
     nextEl: ".testimonial-button-next",
     prevEl: ".testimonial-button-prev",
+  },
+  on: {
+    init: function () {
+      this.navigation.update();
+    },
+  },
+});
+
+const gallerySwiper = new Swiper(".swiper-gallery", {
+  modules: [Navigation],
+  slidesPerView: 3,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".gallery-button-next",
+    prevEl: ".gallery-button-prev",
+  },
+  on: {
+    init: function () {
+      this.navigation.update();
+    },
   },
 });
 

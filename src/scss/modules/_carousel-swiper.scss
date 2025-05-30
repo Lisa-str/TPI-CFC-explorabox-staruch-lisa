@@ -16,7 +16,9 @@
   .getaway-button-prev,
   .getaway-button-next,
   .testimonial-button-prev,
-  .testimonial-button-next {
+  .testimonial-button-next,
+  .gallery-button-prev,
+  .gallery-button-next {
     all: unset;
     display: inline-flex;
     align-items: center;
@@ -44,11 +46,13 @@
 }
 
 .getaway h2,
-.testimonial h2 {
+.testimonial h2,
+.gallery h2 {
   text-align: start;
 }
 
-.getaway {
+.getaway,
+.gallery {
   gap: 1.5rem;
   display: flex;
   flex-direction: column;
