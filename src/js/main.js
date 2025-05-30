@@ -196,18 +196,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* NAV A ACTIVE */
-
 document.addEventListener("DOMContentLoaded", () => {
-  const currentPath = window.location.pathname.replace(/\/$/, ""); // supprime "/" final
-  const navLinks = document.querySelectorAll("nav a[href]");
+  const currentURL = new URL(window.location.href);
+  const currentFile = currentURL.pathname.split("/").pop();
 
-  navLinks.forEach((link) => {
-    const linkPath = new URL(
-      link.href,
-      window.location.origin
-    ).pathname.replace(/\/$/, "");
-
-    if (linkPath === currentPath) {
+  document.querySelectorAll("nav a[href]").forEach((link) => {
+    const linkFile = link.getAttribute("href").split("/").pop();
+    if (linkFile === currentFile) {
       link.classList.add("active-link");
     }
   });

@@ -69,8 +69,8 @@
   }
 }
 
-.header .desktop-nav a.active-link {
-  color: $color-accent;
+a.active-link {
+  color: $color-accent !important;
 }
 
 .menu-mobile {
