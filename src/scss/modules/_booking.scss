@@ -19,6 +19,7 @@
     label {
       font-size: clamp(1rem, 2vw, 1.2rem);
     }
+
     .form-check {
       display: flex;
       gap: 0.5rem;
@@ -225,19 +226,15 @@
   flex-direction: column;
   gap: 1rem;
   position: sticky;
-
   background-color: $color-light;
 
   .steps-line-done {
     position: absolute;
-
     height: 0%;
-
     border: solid 2px $color-accent;
     top: 0;
     left: 1.7rem;
     z-index: 10;
-
     opacity: 1;
   }
 
@@ -249,6 +246,30 @@
     left: 1.7rem;
     z-index: 1;
     opacity: 1;
+  }
+
+  .steps-line-not-done-2 {
+    height: 32%;
+  }
+
+  .steps-line-done-2 {
+    height: 9%;
+  }
+
+  .steps-line-not-done-3 {
+    height: 32%;
+  }
+
+  .steps-line-done-3 {
+    height: 15%;
+  }
+
+  .steps-line-not-done-4 {
+    height: 17%;
+  }
+
+  .steps-line-done-4 {
+    height: 12%;
   }
 
   .steps-line-not-done-5,
@@ -310,11 +331,44 @@
       align-content: center;
       justify-content: center;
       gap: 1.5rem;
-    }
 
-    .steps-line-not-done,
-    .steps-line-done {
-      display: none;
+      .steps-line-done {
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        border: solid 2px $color-accent;
+        top: 2rem;
+        left: 1.7rem;
+        z-index: 10;
+        opacity: 1;
+      }
+
+      .steps-line-not-done {
+        position: absolute;
+        width: 78%;
+        height: 0%;
+        border: solid 2px $color-secondary;
+        top: 2rem;
+        left: 1.7rem;
+        z-index: 1;
+        opacity: 1;
+      }
+
+      .steps-line-done-2 {
+        width: 22%;
+      }
+
+      .steps-line-done-3 {
+        width: 42%;
+      }
+
+      .steps-line-done-4 {
+        width: 62%;
+      }
+
+      .steps-line-done-5 {
+        width: 78%;
+      }
     }
 
     .step-info {
