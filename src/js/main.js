@@ -194,3 +194,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/* NAV A ACTIVE */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPath = window.location.pathname.replace(/\/$/, ""); // supprime "/" final
+  const navLinks = document.querySelectorAll("nav a[href]");
+
+  navLinks.forEach((link) => {
+    const linkPath = new URL(
+      link.href,
+      window.location.origin
+    ).pathname.replace(/\/$/, "");
+
+    if (linkPath === currentPath) {
+      link.classList.add("active-link");
+    }
+  });
+});

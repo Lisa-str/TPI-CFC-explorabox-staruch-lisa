@@ -69,6 +69,10 @@
   }
 }
 
+.header .desktop-nav a.active-link {
+  color: $color-accent;
+}
+
 .menu-mobile {
   position: fixed;
   top: 0;
