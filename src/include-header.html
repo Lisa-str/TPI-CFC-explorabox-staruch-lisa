@@ -54,10 +54,13 @@
       <a href="page-concept.html">Le concept</a>
       <a href="page-a-propos.html">À propos</a>
       <a href="page-contact.html">Contact</a>
-      <include src="include-button.html"
-        >{ "buttontext": "Réserver", "buttonlink": "page-formulaire-1.html"
-        }</include
-      >
+      <include
+        src="include-button.html"
+        locals='{
+  "buttontext": "Réserver",
+  "buttonlink": "page-formulaire-1.html"
+}'
+      ></include>
 
       <div class="dropdown mobile-language">
         <div

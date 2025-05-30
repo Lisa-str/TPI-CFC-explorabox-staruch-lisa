@@ -33,9 +33,13 @@
         <a href="page-concept.html">Le concept</a>
         <a href="page-a-propos.html">À propos</a>
         <a href="page-contact.html">Contact</a>
-        <include src="include-button.html">
-          { "buttontext": "Réserver !", "buttonlink": "" }
-        </include>
+        <include
+          src="include-button.html"
+          locals='{
+  "buttontext": "Réserver !",
+  "buttonlink": ""
+}'
+        ></include>
       </div>
       <div class="col-5">
         <h4 class="sub-title">Coordonnées</h4>

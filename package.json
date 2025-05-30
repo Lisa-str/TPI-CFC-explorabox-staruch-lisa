@@ -6,7 +6,7 @@
     "clean:output": "rimraf dist",
     "clean:cache": "rimraf .parcel-cache",
     "dev": "npm run clean:cache && parcel src/index.html",
-    "build": "npm run clean:output && parcel build src/index.html --public-url '.' --no-cache"
+    "build": "npm run clean:output && parcel build src/*.html --public-url '.' --no-cache"
   },
   "repository": {
     "type": "git",
@@ -16,17 +16,13 @@
   "license": "ISC",
   "homepage": "https://github.com/eikon-frontend/starterkit",
   "parcel-namer-rewrite": {
+    "developmentDisable": true,
     "rules": {
       "(.*)\\.(css)": "css/$1.$2",
       "(.*)\\.(js)": "js/$1.$2",
-      "(.*)\\.(woff|woff2?)": "fonts/$1.$2",
-      "(.*)\\.(mp3)": "audio/$1.$2",
-      "(.*)\\.(mp4|ogg|webm)": "video/$1.$2",
-      "(.*)\\.(svg|png|gif|jpg|webp)": "img/$1.$2"
-    },
-    "silent": true,
-    "development": {
-      "disable": false
+      "(.*)\\.(woff|woff2?)": "font/$1.$2",
+      "(.*)\\.(svg|png|gif|jpg|jpeg|webp)": "img/$1.{hash}.$2",
+      "(.*)\\.(mp4|ogg|webm)": "video/$1.$2"
     }
   },
   "devDependencies": {
@@ -39,6 +35,7 @@
     "path-browserify": "^1.0.1",
     "posthtml": "^0.16.6",
     "posthtml-cli": "^0.10.0",
+    "posthtml-expressions": "^1.11.4",
     "posthtml-extend": "^0.6.5",
     "posthtml-include": "^1.7.1",
     "posthtml-inline-svg": "^0.2.0",

@@ -2,6 +2,12 @@
   "plugins": {
     "posthtml-include": {
       "root": "./src"
-    }
+    },
+    "posthtml-extend": {
+      "root": "./src"
+    },
+    "posthtml-inline-svg": {},
+    "posthtml-webp": {},
+    "posthtml-expressions": {}
   }
 }

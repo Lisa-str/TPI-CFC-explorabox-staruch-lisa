@@ -27,28 +27,44 @@
           class="d-flex box-wrapper align-content-stretch box-container justify-content-center"
         >
           <div class="col-md-4 col-sm-12">
-            <include src="include-box-icon.html"
-              >{ "boxicontext": "Une surprise bien préparée", "boxiconicon":
-              "fa-gift" }</include
-            >
+            <include
+              src="include-box-icon.html"
+              locals='{
+        "boxicontext": "Une surprise bien préparée",
+        "boxiconicon": "fa-gift"
+      }'
+            ></include>
           </div>
+
           <div class="col-md-4 col-sm-12">
-            <include src="include-box-icon.html"
-              >{ "boxicontext": "L’exploration à votre façon", "boxiconicon":
-              "fa-magnifying-glass" }</include
-            >
+            <include
+              src="include-box-icon.html"
+              locals='{
+        "boxicontext": "L’exploration à votre façon",
+        "boxiconicon": "fa-magnifying-glass"
+      }'
+            ></include>
           </div>
+
           <div class="col-md-4 col-sm-12">
-            <include src="include-box-icon.html"
-              >{ "boxicontext": "Laissez-vous guider autrement", "boxiconicon":
-              "fa-compass" }</include
-            >
+            <include
+              src="include-box-icon.html"
+              locals='{
+        "boxicontext": "Laissez-vous guider autrement",
+        "boxiconicon": "fa-compass"
+      }'
+            ></include>
           </div>
         </div>
-        <include src="include-cta.html"
-          >{ "ctatext": "Découvrez comment cela fonctionne", "ctaicon":
-          "fa-arrow-right", "ctalink": "page-formulaire-1.html" }</include
-        >
+
+        <include
+          src="include-cta.html"
+          locals='{
+    "ctatext": "Découvrez comment cela fonctionne",
+    "ctaicon": "fa-arrow-right",
+    "ctalink": "page-formulaire-1.html"
+  }'
+        ></include>
       </div>
     </div>
   </div>

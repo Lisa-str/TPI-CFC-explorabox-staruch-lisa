@@ -122,16 +122,22 @@
               <div class="button-form-wrapper">
                 <div class="buttons-next-to-each-other">
                   <div class="back">
-                    <include src="include-button-second.html"
-                      >{ "buttonsecondtext": "Retour", "buttonsecondlink":
-                      "page-formulaire-1.html" }</include
-                    >
+                    <include
+                      src="include-button-second.html"
+                      locals='{
+  "buttonsecondtext": "Retour",
+  "buttonsecondlink": "page-formulaire-1.html"
+}'
+                    ></include>
                   </div>
                   <div class="next">
-                    <include src="include-button.html"
-                      >{ "buttontext": "Suivant", "buttonlink":
-                      "page-formulaire-3.html" }</include
-                    >
+                    <include
+                      src="include-button.html"
+                      locals='{
+  "buttontext": "Suivant",
+  "buttonlink": "page-formulaire-3.html"
+}'
+                    ></include>
                   </div>
                 </div>
               </div>
