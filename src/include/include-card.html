@@ -1,0 +1,32 @@
+<div class="card-getaway">
+    <div class="">
+        <img loading="lazy" src="img/{{ cardgetawayimg }}?as=webp&width=375" alt=""/>
+    </div>
+
+    <div class="">
+        <h3>{{cardgetawaytitle}}</h3>
+        <p>{{cardgetawaydescription}}</p>
+    </div>
+
+    <div class="price">{{cardgetawayprice}}</div>
+
+    <div class="button-wrapper">
+        <include
+                src="include-button-second.html"
+                locals='{
+        "buttonsecondtext": "En savoir plus",
+        "buttonsecondlink": "{{cardgetawaylink}}"
+      }'
+        >
+        </include>
+
+        <include
+                src="include-button.html"
+                locals='{
+        "buttontext": "{{cardgetawaybutton}}",
+        "buttonlink": "{{cardgetawaylink}}"
+      }'
+        >
+        </include>
+    </div>
+</div>

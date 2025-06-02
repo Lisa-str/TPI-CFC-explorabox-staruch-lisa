@@ -1,13 +1,17 @@
 {
   "plugins": {
     "posthtml-include": {
-      "root": "./src"
+      "root": "./src/include"
     },
     "posthtml-extend": {
       "root": "./src"
     },
     "posthtml-inline-svg": {},
-    "posthtml-webp": {},
+    "posthtml-webp": {
+      "extensionIgnore": [
+        "svg"
+      ]
+    },
     "posthtml-expressions": {}
   }
 }
